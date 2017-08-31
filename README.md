@@ -115,9 +115,6 @@ The ocean model output is stored in [NetCDF](https://en.wikipedia.org/wiki/NetCD
 To facilitate reading all these files, we make use of a server called [THREDDS Data Server](http://www.unidata.ucar.edu/software/thredds/current/tds/). THREDDS aggregates all the NetCDF files and allows users to query subsets of the files.
 
 
-You can use the [editor on GitHub](https://github.com/DFO-Ocean-Navigator/gh-pages/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-
 ## Citations
 
 Hernandez, F. "List of internal metrics for the MERSEA GODAE global ocean: specification for implementation. MERSEA IP report MERSEA-WP05-MERCA-STR-0015-01C. doc." (2007).

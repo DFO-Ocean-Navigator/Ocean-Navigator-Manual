@@ -74,7 +74,7 @@ more information about class 4 can be found in the links below
 
 [Class 4 presentation slides](https://www.godae.org/~godae-data/OceanView/Events/MEAP-TT-workshop-June-2015/4.2-MEtrics_MEAPP.pdf)
 
-[Class 4 Article](http://www.tandfonline.com/doi/full/10.1080/1755876X.2015.1022330)
+<a href="http://www.tandfonline.com/doi/full/10.1080/1755876X.2015.1022330" target="_blank">Class 4 Article</a>
 
 ### Drifters
 

@@ -116,7 +116,7 @@ The ocean model output is stored in [NetCDF](https://en.wikipedia.org/wiki/NetCD
 
 To facilitate reading all these files, we make use of a server called [THREDDS Data Server](http://www.unidata.ucar.edu/software/thredds/current/tds/). THREDDS aggregates all the NetCDF files and allows users to query subsets of the files.
 
-### Known_Bugs
+### Known Bugs
 
  Below is a summary of some of the known bugs in this program that are being worked on. More details and a [full list of bugs](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues) can be found on our [GitHub page](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project). 
 

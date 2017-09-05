@@ -66,7 +66,7 @@ after the selection has been made a new window will open showing the section of 
 
 #### CSV format
 
-When uploading a CSV file (Comma Separated Value) there must be a header line. This header must contain the terms "latitude" and "longitude" to indicate which columns hold this information. These columns will then be used for plotting the points/lines/Areas. If there are extra columns they will be ignored. an example file can be seen [here](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/wiki/example-CSV).
+When uploading a CSV file (Comma Separated Value) there must be a header line. This header must contain the terms "latitude" and "longitude" to indicate which columns hold this information. These columns will then be used for plotting the points/lines/Areas. If there are extra columns they will be ignored. an example file can be seen <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/wiki/example-CSV" target="_blank">here</a>.
 
 ### Class 4
 'Class 4' is an ocean data standard of directly observed data. The purpose of this standard format is so that predictive models can be compared against the true observe data at a particulate location. this can aid in the validations of predictive models and helps predictive models reduce their discrepancies.

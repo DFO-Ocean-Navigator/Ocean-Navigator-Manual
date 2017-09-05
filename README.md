@@ -4,7 +4,8 @@ The Ocean Navigator is a tool to make accessing detailed ocean scientific resear
 While it's main target users are scientists, the tool does not require a science background to use.
 most of the data is predictive, however, using the Class4 and the Drifters exact data can be seen.
 
-Please note: The Ocean Navigator is still in active development in order to both expand its functionality and to fix known bugs. A summery of some of the known bugs that may have an impact on the data displayed in the Ocean Navigator can be seen below in the [known bugs](#known-bugs) section for, more details see the [full list](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues) on GitHub. 
+Please note: The Ocean Navigator is still in active development in order to both expand its functionality and to fix known bugs. A summery of some of the known bugs that may have an impact on the data displayed in the Ocean Navigator can be seen below in the [known bugs](#known-bugs) section for, more details see the <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues" target="_blank">full list</a>
+on GitHub. 
 
 ## Settings Left bar
 

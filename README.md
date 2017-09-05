@@ -2,7 +2,9 @@
 
 The Ocean Navigator is a tool to make accessing detailed ocean scientific research data more accessible.
 While it's main target users are scientists, the tool does not require a science background to use.
-most of the data is predictive, however, using the Class4 and the Drifters exact data can be seen
+most of the data is predictive, however, using the Class4 and the Drifters exact data can be seen.
+
+Please note: The Ocean Navigator is still in active development in order to both expand its functionality and to fix known bugs. A summery of some of the known bugs that may have an impact on the data displayed in the Ocean Navigator can be seen below in the [known bugs](###known bugs) section for, more details see the [full list](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues) on GitHub. 
 
 ## Settings Left bar
 
@@ -114,6 +116,15 @@ The ocean model output is stored in [NetCDF](https://en.wikipedia.org/wiki/NetCD
 
 To facilitate reading all these files, we make use of a server called [THREDDS Data Server](http://www.unidata.ucar.edu/software/thredds/current/tds/). THREDDS aggregates all the NetCDF files and allows users to query subsets of the files.
 
+### Known_Bugs
+
+ Below is a summary of some of the known bugs in this program that are being worked on. More details and a [full list of bugs](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues) can be found on our [GitHub page](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project). 
+
+ * 1) [resolution problem](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/7). In areas where there is a high gradient in the data, there can sometimes be a problem in the color map in the form of blotches of color being rendered. This *will* effect the data values viewed. This is a byproduct of the type of interpolation that is being done to generate a continuous map from a series of data points.
+ 
+ * 2) [velocity plot](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/53) The velocities that are displayed north of 40N on the map are known to be displayed in the wrong directions. This is a result of misrendering the information from a tripolar grid to the grid used by the ocean navigator.
+ 
+ * 3) [Southern Hemisphere misaligned](https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/4) When zoomed to the max zoom level in the Southern Hemisphere the data is not allined with the dislayed view (it is offset by about 70 Km). At the zoom levels that are not the max level this is not an issue.   
 
 ## Citations
 

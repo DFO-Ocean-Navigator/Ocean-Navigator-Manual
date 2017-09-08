@@ -7,7 +7,7 @@ most of the data is predictive, however, using the Class4 and the Drifters exact
 Please note: The Ocean Navigator is still in active development in order to both expand its functionality and to fix known bugs. A summery of some of the known bugs that may have an impact on the data displayed in the Ocean Navigator can be seen below in the [known bugs](#known-bugs) section for, more details see the <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues" target="_blank">full list</a>
 on GitHub. 
 
-If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into youor broswer or right click on the link and select open in a new tab. 
+If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into your broswer or right click on the link and select open in a new tab. 
 
 ## Settings Left bar
 

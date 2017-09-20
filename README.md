@@ -121,7 +121,7 @@ To facilitate reading all these files, we make use of a server called <a href="h
 
 ### Known Bugs
 
- Below is a summary of some of the known bugs in this program that are being worked on. More details and a <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues" target="_blank">full list of bugs</a> can be found on our <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project" target="_blank">GitHub page</a>. 
+ Below is a summary of some of the known bugs in this program that are being worked on. More details and a <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues" target="_blank">full list of bugs</a> can be found on our <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project" target="_blank">GitHub page</a>. If you would like to report a bug that is not listed in the bug tracker please contact oceandatamap@gmail.com .
  
  If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into youor broswer or right click on the link and select open in a new tab. 
 

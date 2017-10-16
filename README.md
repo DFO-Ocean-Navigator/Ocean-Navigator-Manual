@@ -25,6 +25,12 @@ This drop down allows the user to select the type of underlying map. This will a
 
 using the "Show Bathymetry Contours" check box Bathymetry lines in the ocean can be turned on or off.
 
+### Compare Datasets
+
+Checking the compare datasets box will bring up a side by side view of the data set. It will also provide settings in the left side bar for each view. Each view can be changed independently by setting the values in the corresponding settings box (ie left or right view). In addition, the plotting features, explained below in the [Drawing](#drawing) section, will provide extra information when comparing datasets, most notably a difference plot will be shown when comparing variables that are similar.
+
+![Compare_Datasets](http://1.bp.blogspot.com/-9wY8dibxtTk/WeS-Q9cz51I/AAAAAAAAABE/mAwjkmyn8FUS-HVxJV8ZjPNqaRHTGTpBQCK4BGAYYCw/s1600/Selection_055.png)
+
 ### Dataset
 
 this allows for a selection of the different data sets, some datasets contain different types of data and some have recorded the same data in different ways.
@@ -53,9 +59,11 @@ this scale will remain the same as the view is changed. pressing the Default but
 
 
 ## Top Bar
+
 ![map setting top bar](https://3.bp.blogspot.com/-HciIgD7LLN4/WV-UtceUi2I/AAAAAAAAAAs/2FrkOU5xH1IaRNoiFd2viKzcf61tKi0VQCLcBGAs/s1600/top_bar_settings.png)
 
-### Drawing 
+### Drawing
+
 The top bar has serval tools that allow for more detailed analyses of the selected data.
 the point, line, and area options have some predefined selections that can be chosen
 in addition, in the drop-down lists there is also the option to upload a CSV of points or a to draw your own. you can also draw your own line/shape simply by clicking on the respective button.
@@ -69,6 +77,7 @@ after the selection has been made a new window will open showing the section of 
 When uploading a CSV file (Comma Separated Value) there must be a header line. This header must contain the terms "latitude" and "longitude" to indicate which columns hold this information. These columns will then be used for plotting the points/lines/Areas. If there are extra columns they will be ignored. an example file can be seen <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/wiki/example-CSV" target="_blank">here</a>.
 
 ### Class 4
+
 'Class 4' is an ocean data standard of directly observed data. The purpose of this standard format is so that predictive models can be compared against the true observe data at a particulate location. this can aid in the validations of predictive models and helps predictive models reduce their discrepancies.
 more information about class 4 can be found in the links below
 

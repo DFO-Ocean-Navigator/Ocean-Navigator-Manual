@@ -134,11 +134,13 @@ To facilitate reading all these files, we make use of a server called <a href="h
  
  If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into youor broswer or right click on the link and select open in a new tab. 
 
- * 1) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/7" target="_blank">resolution problem</a>. In areas where there is a high gradient in the data, there can sometimes be a problem in the color map in the form of blotches of color being rendered. This *will* effect the data values viewed. This is a byproduct of the type of interpolation that is being done to generate a continuous map from a series of data points.
+ * 1) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/66" target="_blank">Forcast displays bad data</a> The giops and RIOPS forcasts are displaying old data due to a caching problem. This is top of the priotry list to fix but in the mean time to avoide problems with the data try selecting a new scale every day. Note this problem is only a viewer porblem, if you have pulled the data set form our site that data should be fine. 
  
- * 2) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/53" target="_blank">velocity plot</a> The velocities that are displayed north of 40N on the map are known to be displayed in the wrong directions. This is a result of misrendering the information from a tripolar grid to the grid used by the ocean navigator.
+ * 2) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/7" target="_blank">resolution problem</a>. In areas where there is a high gradient in the data, there can sometimes be a problem in the color map in the form of blotches of color being rendered. This *will* effect the data values viewed. This is a byproduct of the type of interpolation that is being done to generate a continuous map from a series of data points.
  
- * 3) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/4" target="_blank">Southern Hemisphere misaligned</a> When zoomed to the max zoom level in the Southern Hemisphere the data is not allined with the dislayed view (it is offset by about 70 Km). At the zoom levels that are not the max level this is not an issue.   
+ * 3) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/53" target="_blank">velocity plot</a> The velocities that are displayed north of 40N on the map are known to be displayed in the wrong directions. This is a result of misrendering the information from a tripolar grid to the grid used by the ocean navigator.
+ 
+ * 4) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/4" target="_blank">Southern Hemisphere misaligned</a> When zoomed to the max zoom level in the Southern Hemisphere the data is not allined with the dislayed view (it is offset by about 70 Km). At the zoom levels that are not the max level this is not an issue.   
 
 ## Citations
 

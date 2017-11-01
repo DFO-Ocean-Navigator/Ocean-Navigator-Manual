@@ -135,6 +135,7 @@ To facilitate reading all these files, we make use of a server called <a href="h
  If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into youor broswer or right click on the link and select open in a new tab. 
 
  * 1) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/66" target="_blank">Forcast displays bad data</a> The giops and RIOPS forcasts are displaying old data due to a caching problem. This is top of the priotry list to fix but in the mean time to avoide problems with the data try selecting a new scale every day. Note this problem is only a viewer porblem, if you have pulled the data set form our site that data should be fine. 
+ UPDATE this problem is mostly fixed. if you are still seeing it please clear your broswres cache. 
  
  * 2) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/7" target="_blank">resolution problem</a>. In areas where there is a high gradient in the data, there can sometimes be a problem in the color map in the form of blotches of color being rendered. This *will* effect the data values viewed. This is a byproduct of the type of interpolation that is being done to generate a continuous map from a series of data points.
  

@@ -9,11 +9,10 @@ on GitHub.
 
 If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into your broswer or right click on the link and select open in a new tab. 
 
-## Settings Left bar
+## Left Sidebar (Map Settings)
 
 On the Left side of the tool, there are several drop down lists, the details of each and their purpose are detailed below
 ![map setting (left bar)](https://2.bp.blogspot.com/-CQJ0IiAHMaA/WV-UtIGtC6I/AAAAAAAAAAk/x_bjzwPy0u8gNkRFjRTJSG-aCabasY2qACLcBGAs/s1600/left_bar_settings.png)
-map settings left the bar
 
 ### Projection
 
@@ -70,7 +69,7 @@ in addition, in the drop-down lists there is also the option to upload a CSV of 
 when drawing a shape or line search click will add a new point in the line for a shape you need to link it back to the start to finish it or you can double
 click to end on that point which will end the shape by linking that point to the start. Clicking on the same point twice in a row is also how to end drawing a line.
 
-after the selection has been made a new window will open showing the section of map selected.
+After the selection has been made a new window will open showing the data corresponding to it.
 
 #### CSV format
 
@@ -94,31 +93,30 @@ This button is grayed out until the line or point functions have been used.
 if the Point or line functions are used and the pop-up window has been closed pressing the Plot button will reopen that window.
 Pressing on the line or dot will also reopen the window.
 
-### Rest map/Refresh
+### Reset Map
 
 This cycle arrow button simply clears the map of any points, lines or areas that have been selected. It does not reset other settings. To reset everything uses the browsers refresh button.
 
-## keyboard shortcuts and Other
+## Misc.
 
+### Keyboard shortcuts
 There are 2 keyboard keys that will provide extra features. These are _shift_ and _ctrl_ their function depends on the action that is being performed at the time.  Continue reading for more details. 
  
 
-### plotting multiple points 
-
-When there have been multiple points displayed on the map (ex from an uploaded csv file), multiple can be selected at the same time
+### Plotting multiple points 
+When multiple points are rendered on the map (i.e. from an uploaded csv file), some or all can be selected at the same time:
 
 #### Point by point
-This can be done by pressing shift and then clicking on the point(s) you would like to view. After selecting all the points, press plot to have them all drawn on the same graph. 
+This can be done by pressing `Shift` and then clicking on the point(s) you would like to view. After selecting all the points, press plot to have them all drawn on the same graph.
 
 #### Selection box
-Pressing and holding Ctrl will allow the user to draw a selection box to select multiple points at the same time. After selecting the desired points, press plot to have them all drawn on the same graph. 
+Pressing and holding `Ctrl` will allow the user to draw a selection box to select multiple points at the same time. After selecting the desired points, press plot to have them all drawn on the same graph. 
 
 ### Drawing curved lines
 After selecting the option to draw a line or area from the tool bar, a curved line can be drawn by pressing and holding shift while drawing the line. 
 
 ### Quick zoom
 Pressing and holding shift will allow for an area to selected for a quick zoom. 
-
 
 ## Technical Details
 
@@ -130,9 +128,9 @@ To facilitate reading all these files, we make use of a server called <a href="h
 
 ### Known Bugs
 
- Below is a summary of some of the known bugs in this program that are being worked on. More details and a <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues" target="_blank">full list of bugs</a> can be found on our <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project" target="_blank">GitHub page</a>. If you would like to report a bug that is not listed in the bug tracker please contact oceandatamap@gmail.com .
+Below is a summary of some of the known bugs in this program that are being worked on. More details and a <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues" target="_blank">full list of bugs</a> can be found on our <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project" target="_blank">GitHub page</a>. If you would like to report a bug that is not listed in the bug tracker please contact oceandatamap@gmail.com .
  
- If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into youor broswer or right click on the link and select open in a new tab. 
+If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into youor broswer or right click on the link and select open in a new tab. 
  
  * 1) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/7" target="_blank">resolution problem</a>. In areas where there is a high gradient in the data, there can sometimes be a problem in the color map in the form of blotches of color being rendered. This *will* effect the data values viewed. This is a byproduct of the type of interpolation that is being done to generate a continuous map from a series of data points.
  
@@ -140,6 +138,6 @@ To facilitate reading all these files, we make use of a server called <a href="h
  
  * 3) <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues/4" target="_blank">Southern Hemisphere misaligned</a> When zoomed to the max zoom level in the Southern Hemisphere the data is not allined with the dislayed view (it is offset by about 70 Km). At the zoom levels that are not the max level this is not an issue.   
 
-## Citations
+### Citations
 
 Hernandez, F. "List of internal metrics for the MERSEA GODAE global ocean: specification for implementation. MERSEA IP report MERSEA-WP05-MERCA-STR-0015-01C. doc." (2007).

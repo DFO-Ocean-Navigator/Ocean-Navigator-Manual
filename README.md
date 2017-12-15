@@ -112,6 +112,9 @@ This can be done by pressing `Shift` and then clicking on the point(s) you would
 #### Selection box
 Pressing and holding `Ctrl` will allow the user to draw a selection box to select multiple points at the same time. After selecting the desired points, press plot to have them all drawn on the same graph. 
 
+#### Rotate map
+Pressing and holding shift+alt followed by clicking and draging will rotate the map. 
+
 ### Drawing curved lines
 After selecting the option to draw a line or area from the tool bar, a curved line can be drawn by pressing and holding shift while drawing the line. 
 

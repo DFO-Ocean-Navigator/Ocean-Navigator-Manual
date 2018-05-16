@@ -14,7 +14,7 @@ If you have a hard time opening links on this page please try pasting https://df
 On the Left side of the tool, there are several drop down lists, the details of each and their purpose are detailed below
 ![map setting (left bar)](https://2.bp.blogspot.com/-CQJ0IiAHMaA/WV-UtIGtC6I/AAAAAAAAAAk/x_bjzwPy0u8gNkRFjRTJSG-aCabasY2qACLcBGAs/s1600/left_bar_settings.png)
 
-![map setting (left bar)](https://github.com/DFO-Ocean-Navigator/Ocean-Navigator-Manual/blob/master/screenshots/Screenshot%20from%202018-05-16%2013-05-53.png)
+![map setting (left bar)](https://github.com/DFO-Ocean-Navigator/Ocean-Navigator-Manual/blob/master/screenshots/comparison.png)
 
 ### Projection
 

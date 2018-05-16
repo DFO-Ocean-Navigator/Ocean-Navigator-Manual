@@ -13,7 +13,7 @@ If you have a hard time opening links on this page please try pasting https://df
 
 On the Left side of the tool, there are several drop down lists, the details of each and their purpose are detailed below
 
-![map setting (left bar)](https://github.com/DFO-Ocean-Navigator/Ocean-Navigator-Manual/blob/master/screenshots/sideBar.png)
+![map setting (left bar)](https://raw.githubusercontent.com/DFO-Ocean-Navigator/Ocean-Navigator-Manual/master/screenshots/sideBar.png)
 
 ### Projection
 
@@ -29,7 +29,7 @@ using the "Show Bathymetry Contours" check box Bathymetry lines in the ocean can
 
 Checking the compare datasets box will bring up a side by side view of the data set. It will also provide settings in the left side bar for each view. Each view can be changed independently by setting the values in the corresponding settings box (ie left or right view). In addition, the plotting features, explained below in the [Drawing](#drawing) section, will provide extra information when comparing datasets, most notably a difference plot will be shown when comparing variables that are similar.
 
-![Compare_Datasets](https://github.com/DFO-Ocean-Navigator/Ocean-Navigator-Manual/blob/master/screenshots/comparison.png)
+![Compare_Datasets](https://raw.githubusercontent.com/DFO-Ocean-Navigator/Ocean-Navigator-Manual/master/screenshots/comparison.png)
 ### Dataset
 
 this allows for a selection of the different data sets, some datasets contain different types of data and some have recorded the same data in different ways.
@@ -59,7 +59,7 @@ this scale will remain the same as the view is changed. pressing the Default but
 
 ## Top Bar
 
-![map setting top bar](https://github.com/DFO-Ocean-Navigator/Ocean-Navigator-Manual/blob/master/screenshots/topBar.png)
+![map setting top bar](https://raw.githubusercontent.com/DFO-Ocean-Navigator/Ocean-Navigator-Manual/master/screenshots/topBar.png)
 
 ### Drawing
 

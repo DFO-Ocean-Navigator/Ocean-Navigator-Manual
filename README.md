@@ -127,8 +127,6 @@ Ocean Navigator is a Data Visualization tool that enables users to discover and 
 
 The ocean model output is stored in [NetCDF](https://en.wikipedia.org/wiki/NetCDF) files. These files are self-describing and contain the 2D or 3D model output for one or more timesteps and one or more variables.
 
-To facilitate reading all these files, we make use of a server called <a href="http://www.unidata.ucar.edu/software/thredds/current/tds/" target="_blank">THREDDS Data Server</a>. THREDDS aggregates all the NetCDF files and allows users to query subsets of the files.
-
 ### Known Bugs
 
 Below is a summary of some of the known bugs in this program that are being worked on. More details and a <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues" target="_blank">full list of bugs</a> can be found on our <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project" target="_blank">GitHub page</a>. If you would like to report a bug that is not listed in the bug tracker please contact oceandatamap@gmail.com .

@@ -1,3 +1,75 @@
+# Ocean Navigator Overview
+
+The Ocean Navigator is a data visualization tool which aims to provide users access to ocean environment prediction products and in-situ observation data.
+
+![Ocean Navigator Overview](screenshots/overview.png "Ocean Navigator Overview")
+
+### 1. Main Map
+
+### 2. Dataset Selection Panel
+
+![Dataset Selection Panel](screenshots/dataset_selector.png "Dataset Selection Panel")
+
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+
+### 3. Data Scale Viewer
+
+![Data Scale Viewer](screenshots/scale_viewer.png "Data Scale Viewer")
+
+### 4. Navigator Tools
+![Navigator Tools](screenshots/map_buttons.png "Navigator Tools")
+
+### 5. Additional Options
+
+# Using the Ocean Navigator
+
+## Navigating Data Displayed on the _Main Map_
+
+## Selecting Coordinates and Creating Plots with the _Draw Point Coordinates_ Tool
+
+![Draw Point Coordinates Button](screenshots/draw_point_button.png "Draw Point Coordinates Button")
+
+![Drawing Options](screenshots/drawing_tools.png "Drawing Options")
+
+![Points, Line, and Area](screenshots/point_line_area.png "Points, Line, and Area")
+
+## Selecting Coordinates and Creating Plots with the _Enter Point Coordinates_ Tool
+
+![Enter Point Coordinates Button](screenshots/enter_coords_button.png "Enter Point Coordinates Button")
+
+![Enter Point Coordinates Window](screenshots/enter_coords_window.png "Enter Point Coordinates Window") 
+
+![Add POint Coordinates](screenshots/add_coords.png "Add Point Coordinates")
+
+## Creating Plots via the _Preset Features_ Menu
+
+![Preset Features Button](screenshots/preset_features_button.png "Preset Features Button")
+
+![Preset Features Window](screenshots/preset_features_window.png "Preset Features Window") 
+
+##
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Ocean Navigator General use
 
 The Ocean Navigator is a tool to make accessing detailed ocean scientific research data more accessible.
@@ -5,9 +77,9 @@ While it's main target users are scientists, the tool does not require a science
 most of the data is predictive, however, using the Class4 and the Drifters exact data can be seen.
 
 Please note: The Ocean Navigator is still in active development in order to both expand its functionality and to fix known bugs. A summery of some of the known bugs that may have an impact on the data displayed in the Ocean Navigator can be seen below in the [known bugs](#known-bugs) section for, more details see the <a href="https://github.com/DFO-Ocean-Navigator/Ocean-Data-Map-Project/issues" target="_blank">full list</a>
-on GitHub. 
+on GitHub.
 
-If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into your broswer or right click on the link and select open in a new tab. 
+If you have a hard time opening links on this page please try pasting https://dfo-ocean-navigator.github.io/Ocean-Navigator-Manual/ into your broswer or right click on the link and select open in a new tab.
 
 ## Left Sidebar (Map Settings)
 
@@ -30,6 +102,7 @@ using the "Show Bathymetry Contours" check box Bathymetry lines in the ocean can
 Checking the compare datasets box will bring up a side by side view of the data set. It will also provide settings in the left side bar for each view. Each view can be changed independently by setting the values in the corresponding settings box (ie left or right view). In addition, the plotting features, explained below in the [Drawing](#drawing) section, will provide extra information when comparing datasets, most notably a difference plot will be shown when comparing variables that are similar.
 
 ![Compare_Datasets](https://raw.githubusercontent.com/DFO-Ocean-Navigator/Ocean-Navigator-Manual/master/screenshots/comparison.png "Data Comparison")
+
 ### Dataset
 
 this allows for a selection of the different data sets, some datasets contain different types of data and some have recorded the same data in different ways.
@@ -55,7 +128,6 @@ anything outside the selected range will appear as the max or min color dependin
 
 pressing the auto button will change the range such that for the current view the min and max values on the map will become the min and max values on the scale respectively.
 this scale will remain the same as the view is changed. pressing the Default button will return the scale back to its default values range for that variable.
-
 
 ## Top Bar
 
@@ -86,9 +158,10 @@ more information about class 4 can be found in the links below
 
 ### Drifters
 
-Selecting the "drifters" drop down list will provide the option to either show a category of drifters or to select just one drifter. once selected the drifter(s) will appear on the main map, from there more information can be seen about the drifter by clicking on its path. this will open a popup window about the drifter. 
+Selecting the "drifters" drop down list will provide the option to either show a category of drifters or to select just one drifter. once selected the drifter(s) will appear on the main map, from there more information can be seen about the drifter by clicking on its path. this will open a popup window about the drifter.
 
 ### Plot
+
 This button is grayed out until the line or point functions have been used.
 if the Point or line functions are used and the pop-up window has been closed pressing the Plot button will reopen that window.
 Pressing on the line or dot will also reopen the window.
@@ -100,26 +173,32 @@ This cycle arrow button simply clears the map of any points, lines or areas that
 ## Misc.
 
 ### Keyboard shortcuts
-There are 2 keyboard keys that will provide extra features. These are _shift_ and _ctrl_ their function depends on the action that is being performed at the time.  Continue reading for more details. 
- 
 
-### Plotting multiple points 
+There are 2 keyboard keys that will provide extra features. These are _shift_ and _ctrl_ their function depends on the action that is being performed at the time. Continue reading for more details.
+
+### Plotting multiple points
+
 When multiple points are rendered on the map (i.e. from an uploaded csv file), some or all can be selected at the same time:
 
 #### Point by point
+
 This can be done by pressing `Shift` and then clicking on the point(s) you would like to view. After selecting all the points, press plot to have them all drawn on the same graph.
 
 #### Selection box
-Pressing and holding `Ctrl` will allow the user to draw a selection box to select multiple points at the same time. After selecting the desired points, press plot to have them all drawn on the same graph. 
+
+Pressing and holding `Ctrl` will allow the user to draw a selection box to select multiple points at the same time. After selecting the desired points, press plot to have them all drawn on the same graph.
 
 #### Rotate map
-Pressing and holding shift+alt followed by clicking and draging will rotate the map. 
+
+Pressing and holding shift+alt followed by clicking and draging will rotate the map.
 
 ### Drawing curved lines
-After selecting the option to draw a line or area from the tool bar, a curved line can be drawn by pressing and holding shift while drawing the line. 
+
+After selecting the option to draw a line or area from the tool bar, a curved line can be drawn by pressing and holding shift while drawing the line.
 
 ### Quick zoom
-Pressing and holding shift will allow for an area to selected for a quick zoom. 
+
+Pressing and holding shift will allow for an area to selected for a quick zoom.
 
 ## Technical Details
 

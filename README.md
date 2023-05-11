@@ -1,14 +1,12 @@
-
 The Ocean Navigator is a visualization application for digital ocean information that was developed to make numerical ocean environment prediction estimates and in-situ ocean observation available to end users. It includes a number of different variables such as temperature and ocean currents. The tool is designed for any user; be it a researcher writing a technical paper, or a hobbyist interested in the oceans.
 
 # Ocean Navigator Overview
-
 
 ![Ocean Navigator Overview](screenshots/overview.png "Ocean Navigator Overview")
 
 ### 1. Main Map
 
-The main map is the most prominent way to visualize oceangraphic forecast models in the Ocean Navigator. The default view is centered on the North-West Atlantic but users can pan over map clicking and dragging at any point. Users can also zoom in or out using their mouse wheel, laptop touchpad, or by using the zoom buttons present in the [Additional Options](#5-additional-options) area. 
+The main map is the most prominent way to visualize oceangraphic forecast models in the Ocean Navigator. The default view is centered on the North-West Atlantic but users can pan over map clicking and dragging at any point. Users can also zoom in or out using their mouse wheel, laptop touchpad, or by using the zoom buttons present in the [Additional Options](#5-additional-options) area.
 
 The main map is highly customizeable and users are given the ability to change the map projection, basemap layers, bathymetry, and more. See [Changing Map Settings](#changing-map-settings-) for more details.
 
@@ -16,13 +14,13 @@ The main map is highly customizeable and users are given the ability to change t
 
 ![Dataset Selection Panel](screenshots/dataset_selector.png "Dataset Selection Panel")
 
-The dataset selection panel allows users to view datasets from the Ocean Navigator's data catalog on the main map. There are several menus that users can use to modify the data presented. Once the user has selected a data product and the relevant parameters they must click the _Go_ button to display the data on the main map. The data set selection menus are described in detail below. 
+The dataset selection panel allows users to view datasets from the Ocean Navigator's data catalog on the main map. There are several menus that users can use to modify the data presented. Once the user has selected a data product and the relevant parameters they must click the _Go_ button to display the data on the main map. The data set selection menus are described in detail below.
 
 1. Dataset Selector
 
    ![Dataset Dropdown Menu](screenshots/dataset_dropdown.png "Dataset Dropdown Menu")
 
-   The dataset drop down allows users to select data from one of the many forecast models available in the Ocean Navigator. Within the dataset dropdown menu data is first grouped by forecast then other relevant details such as dimensionality, time range, and climatologies. 
+   The dataset drop down allows users to select data from one of the many forecast models available in the Ocean Navigator. Within the dataset dropdown menu data is first grouped by forecast then other relevant details such as dimensionality, time range, and climatologies.
 
 2. Variable Selector
 
@@ -30,7 +28,7 @@ The dataset selection panel allows users to view datasets from the Ocean Navigat
 
 3. Quiver Selector
 
-   Users can display vector variables as quiver arrows drawn over the global map view by selecting a variable from the quiver dropdown menu. 
+   Users can display vector variables as quiver arrows drawn over the global map view by selecting a variable from the quiver dropdown menu.
 
    ![Quiver Arrows](screenshots/quiver_arrows.png "Quiver Arrows")
 
@@ -43,49 +41,57 @@ The dataset selection panel allows users to view datasets from the Ocean Navigat
    This switch allows users to display two datasets simultaneous and make comparison line and area plots between the two. See [Comparing Datasets](#Comparing-Datasets) for more details.
 
 6. Timestamp Slider
-![Time Slider](screenshots/time_slider.png "Time Slider")
+   ![Time Slider](screenshots/time_slider.png "Time Slider")
 
-   Users can select the model forecast time on the main map using the _timestamp slider_. The currently selected time is indicated by the slider thumb <img src="screenshots/slider_thumb.png" width=20 height=20 />. 
-   
+   Users can select the model forecast time on the main map using the _timestamp slider_. The currently selected time is indicated by the slider thumb <img src="screenshots/slider_thumb.png" width=20 height=20 />.
+
    To select a new timestamp users can click on any tick along the timestamp slider or select an adjacent timestamp using the previous and next buttons located on each end of the slider <img src="screenshots/chevron.png" height=20 />.
 
-   Due to size contraints the the timeslider only displays labels for major ticks at 00:00 and 12:00 for hourly datasets but a tooltip will appear over the minor ticks indicating their time. For larger datasets with more than 48 available timestamps the <img src="screenshots/double_chevron.png" height=20 /> buttons will cycle though groups of timestamps. 
+   Due to size contraints the the timeslider only displays labels for major ticks at 00:00 and 12:00 for hourly datasets but a tooltip will appear over the minor ticks indicating their time. For larger datasets with more than 48 available timestamps the <img src="screenshots/double_chevron.png" height=20 /> buttons will cycle though groups of timestamps.
 
 7. Go Button
 
-   The _Go Button_ is used to enact the changes that the user has made through the menus above. 
+   The _Go Button_ is used to enact the changes that the user has made through the menus above.
 
 ### 3. Data Scale Viewer
 
 ![Data Scale Viewer](screenshots/scale_viewer.png "Data Scale Viewer")
 
-The Data Scale Viewer displays the colormap scale of the currenly displayed variable. Clicking on the data scale viewer will reveal the _Colormap Range_ selector. Here users can adjust the maximum and minimum values of the current colormap by entering new values or clicking the _Auto_ button which will scale the colormap to the data range within the area currently visible on the map. Clicking _Default_ will restore the original colormap range. 
+The Data Scale Viewer displays the colormap scale of the currenly displayed variable. Clicking on the data scale viewer will reveal the _Colormap Range_ selector. Here users can adjust the maximum and minimum values of the current colormap by entering new values or clicking the _Auto_ button which will scale the colormap to the data range within the area currently visible on the map. Clicking _Default_ will restore the original colormap range.
 
 ### 4. Navigator Map Tools
 
 #### Draw Point Coordinates <img src="screenshots/draw_button.png" width=35 height=35 />
+
 Clicking this button enters drawing mode and the Navigator's drawing options are displayed. The drawing options provide buttons to change the plot type (point, line, and area), undo a point, clear the map, and plot the coordinates added by the user. Once points have been added to the map their locations can also be modified using the [Enter Point Coordinates window](#enter-point-coordinates). For more details on drawing coordinates and plotting see [Selecting Coordinates and Creating Plots with the _Draw Point Coordinates_ Tool](#selecting-coordinates-and-creating-plots-with-the-draw-point-coordinates-tool).
 
 #### Enter Point Coordinates <img src="screenshots/enter_button.png" width=35 height=35 />
-Selecting this option displays the _Enter Point Coordinates window_. This feature allows users to enter the exact location of points of interest and plot data at those locations. Users also have the option of importing point coordinates from a CSV file. Like the _Draw Point Coordinates_ tool users can select from a variety of plot types and plotting that data. Any points present on the map, whether they have been previous entered via this window, imported from a CSV, or drawn on the map, can be modified in this window. See [Selecting Coordinates and Creating Plots with the _Enter Point Coordinates_ Tool](#selecting-coordinates-and-creating-plots-with-the-enter-point-coordinates-tool) section for more information. 
+
+Selecting this option displays the _Enter Point Coordinates window_. This feature allows users to enter the exact location of points of interest and plot data at those locations. Users also have the option of importing point coordinates from a CSV file. Like the _Draw Point Coordinates_ tool users can select from a variety of plot types and plotting that data. Any points present on the map, whether they have been previous entered via this window, imported from a CSV, or drawn on the map, can be modified in this window. See [Selecting Coordinates and Creating Plots with the _Enter Point Coordinates_ Tool](#selecting-coordinates-and-creating-plots-with-the-enter-point-coordinates-tool) section for more information.
 
 #### Preset Features <img src="screenshots/preset_button.png" width=35 height=35 />
-The Ocean Navigator also provides users with a number of preset points, line, and areas that may be of interest to users. Clicking on this button will present the user with a menu where they can select from a variety of points of interest which can added to the map. Once on the map any of these features can be plotted by clicking on them. Note that selecting any of these options will remove all other points of interest from the map. 
+
+The Ocean Navigator also provides users with a number of preset points, line, and areas that may be of interest to users. Clicking on this button will present the user with a menu where they can select from a variety of points of interest which can added to the map. Once on the map any of these features can be plotted by clicking on them. Note that selecting any of these options will remove all other points of interest from the map.
 
 #### Observations <img src="screenshots/obs_button.png" width=35 height=35 />
+
 The _Observations_ button allows users to access the Ocean Navigator's observations database. When clicked the Observation options which gives the user a number of options for selecting observations or displaying class4 data. For a more detailed descrition of these options see [Viewing Observation and Class4 Data](#viewing-observation-and-class4-data).
 
 #### Plot <img src="screenshots/plot_button.png" width=35 height=35 />
-The _Plot_ button behavior is dependent on the data displayed on the map. For user selected point, lines, or areas clicking this button will open the appropriate [plot window](#ocean-navigator-plot-windows). In the event that multiple points were selected the resulting plot will contain all of them. For preset features, observaitons, and class4 points clicking this button will open a plot window for the most resecntly selected feature. 
+
+The _Plot_ button behavior is dependent on the data displayed on the map. For user selected point, lines, or areas clicking this button will open the appropriate [plot window](#ocean-navigator-plot-windows). In the event that multiple points were selected the resulting plot will contain all of them. For preset features, observaitons, and class4 points clicking this button will open a plot window for the most resecntly selected feature.
 
 #### Reset Map <img src="screenshots/reset_button.png" width=35 height=35 />
-As implied, the _Reset Map_ button removes all features from the map. 
+
+As implied, the _Reset Map_ button removes all features from the map.
 
 #### Settings <img src="screenshots/settings_button.png" width=35 height=35 />
-This button will open the [settings window](#changing-map-settings) where users can modify the main map. 
+
+This button will open the [settings window](#changing-map-settings) where users can modify the main map.
 
 #### Info/Help <img src="screenshots/info-help_button.png" width=35 height=35 />
-Clicking this button opens the _Info/Help_ window where users can find dataset metadata, variable definitions, and help documents such as this one.  
+
+Clicking this button opens the _Info/Help_ window where users can find dataset metadata, variable definitions, and help documents such as this one.
 
 ### 5. Additional Options
 
@@ -102,22 +108,131 @@ Clicking this button opens the _Info/Help_ window where users can find dataset m
 3. Cursor Coordinates
 
    Displays the current latitude/longitude cooridnates of the mouse cursor.
-  
+
 4. Zoom Buttons
 
    These buttons can be used to change the zoom level of the main map.
 
 # Ocean Navigator Plot Windows
 
-## Point Window
+Users can produce a number of plot types from points of interest within the Ocean Navigator. Each plot includes basic statistics for the data presented. These plotters are acessed through the following windows:
 
-## Line Window
+## Point
 
-## Area Window
+![Point Window](screenshots/point_window.png "Point Window")
+
+The _Point_ window contains a number of plot types appropriate for extracting data from singular coordinates.
+
+1. Plot Tabs
+
+   Here users can select from a number of point plotters:
+
+   - **Profile Plot:** This is a plot along the water column at the chosen location(s). This plot is only available for variables with a depth dimension. Multiple variables can be selected from the _Dataset Selector_ by holding the shift key and clicking on the desired variables. See _2. Dataset Selector_ for more information.
+   - **CTD Profile:** Similar to the _Profile Plot_ but only displays temperature and salinity data.
+   - **T/S Diagram:** A temperature and salitiy diagram for the selected location. Temperature is given on the verital axis and salinity on the horizontal. The figure's depth values are amended to the resulting line.
+   - **Sound Speed Profile:** A profile plot for the SOund Speed variable. The horizontal axis ranges from 1410 to 1560 m/s.
+   - **Observation:** See [Observation](#observation).
+   - **Virtual Mooring:** A timeseries plot of at the chosen location. Users can specify start and end times of the plot but due to resource contraints only 50 timestamps can be displayed at once.
+
+2. Dataset Selector
+
+   Similar to the main map's Dataset Selector. Here users can change the dataset, variable, and other parameters. Depending on the current plot tab selected these options may change. The Profile plotter allows users to select multiple variables to be displayed by holding shift and clicking on the variables of interest. This plot, and the virtual mooring plot also include a range selector that allows the user to modify the dependent variable axis range in the plot. When the Virtual Mooring tab is selected the dataset selector will include a time selector for the start and end times of the plot. The user can also check the _Show Location_ box to display a map of the points withinin the plot. Here they can also chagne the location of the selected point. The _Plot Options_ menu allows users to adjust the plot's size and provide an alternate title.
+
+
+
+## Line
+
+![Line Window](screenshots/line_window.png "Line Window")
+
+The _Line_ window plots data along a route specified by two or more point coordinates.
+
+1. Plot Tabs
+
+   - **Transect:** A transect plot displays the values along the selected line and water column. The data values are given by the colormap on the right. This plot is only available for variables with depth dimensions.
+
+   - **Hovmöller:** A Hovmöller diagram displays the values along the selected line over a period of time. Again, data values are given by the provided colormap.
+
+2. Plot Settings
+
+   This panel provides the following options for the selected plot.
+
+   - **Compare Datasets:** Checking this option allows users to compare two varaibles from any of the avilable datasets along the selected line. When selected a second Dataset selector becomes avilable to specify the variable to compare to.
+   - **Show Map Location:** Check this option to include a map of the selected line in the plot (checked by default).
+   - **Plot Options:** Allows users to adjust the plot's size and provide an alternate title.
+
+
+   If a _transect_ plot is seclected:
+
+   - **Surface Variable:** Users can plot the surface vlues along the transect for any variable listed in the dropdown menu.
+   - **Linear Threshold:** This thrshold separates the plot into two sections. The values above the threshold value are plotted on a linear scale while those below are plotted on a logarithmic scale.
+   - **Depth Limit:** This option limits the depth of the transect plot.
+
+3. Save Options
+
+   See [Saving Plots and Data](#saving-plots-and-data).
+
+4. Dataset Selector
+
+   Similar to the main map's Dataset Selector. Here users can change the dataset, variable and other parameters. if _Compare Datasets_ is checked then a second dataset selector will become available. This dataset selector also allows users to change the colormap of the plotted data.
+
+## Area
+
+![Area Window](screenshots/area_window.png "Area Window")
+
+1. Area Settings
+
+   This panel provides the following options for the selected plot.
+
+   * __Compare Datasets:__ Checking this option allows users to compare two varaibles from any of the avilable datasets along the selected line. When selected a second Dataset selector becomes avilable to specify the variable to compare to.
+   * __Show Bathymetry Contours:__ This option adds bathymetry contours to the area plot (checked by default)
+   * __Show Selected Areas:__ Checkbox indicated whther to include the selected area in the plot (checked by default).
+   * __Arrows Menu:__ Selecting a variable from this menu adds its quiver arrows to the area plot.
+   * __Additional Contours:__ Selecting a variable from this menu adds its isolines to the plot. 
+   * __Plot Options:__ Allows users to adjust the plot's size and provide an alternate title.
+
+2. Subset Panel
+
+   The subset panel allows users to extract data from the plotted area and download in a number of NetCDF file formats. 
+
+   * __Variables:__ Users can select one or more varaibles to add to the NetCDF subset product from this menu. To select multiple variables hold the shift key while making your selection.
+   * __Select Time Range:__ Checking this box will allow users to create a subset over a time range. 
+   * __Time Selector:__ Specify the timestamp for the subset data. If a time range is selected two selectors will allow users to pick the start and end times. 
+   * __Output Format Dropdown:__ Users can chose from a number of NetCDF formats for the output. 
+   * __Compress as *.zip:__ Checking this box will compress the output file in a .zip archive. 
+   * __Save:__ Once all of the above ahve been selected click this button so save the subset product. 
+   * __API Scripts:__ Users can download API scripts to retrieve the selected subset data in _R_ or _Python_.
+
+3. Save Options
+
+   See [Saving Plots and Data](#saving-plots-and-data).
+
+4. Dataset Selector
+
+   Similar to the main map's Dataset Selector. Here users can change the dataset, variable and other parameters. if _Compare Datasets_ is checked then a second dataset selector will become available. This dataset selector also allows users to change the colormap of the plotted data.
 
 ## Observation
 
+![Observation Window](screenshots/obs_plot_window.png "Observation Window")
+
 ## Class4
+
+![Class4 Window](screenshots/class4_window.png "Class4 Window")
+
+## Saving Plots and Data
+
+The are three sets of options avaialble to users for extracting the plotted data:
+
+**Save Image**
+
+Users can save the plot in one of many common image formats including _png, jpg, svg_, and others. The _CSV/ODV_ options allow the user to download the raw data in either format. Lastly, users can download just the statistics using the _Statistics (csv)_ option.
+
+**Get Link**
+
+Here users can generate links to the plotted data. The _Web_ option will produce a link that will open the Ocean Navigator in its current state with the plot window opened and plot displayed. The _Image_ option creates a direct link to the image only.
+
+**API Script**
+
+Users can generate API scripts in either _R_ or _Python_ that will fetch the plot. The _PLOT_ option will retrieve the image in _png_ format while the _csv_ option will produce a _csv_ file containing the plot data. These options can be futher developed to include other Ocean Navigator features. See the [API Documentation](https://navigator.oceansdata.ca/docs) for further information on how to interact with the API.
 
 # Using the Ocean Navigator
 
@@ -131,13 +246,13 @@ Clicking this button opens the _Info/Help_ window where users can find dataset m
 
 ## Selecting Coordinates and Creating Plots with the _Enter Point Coordinates_ Tool <img src="screenshots/enter_button.png" width=35 height=35 />
 
-![Enter Point Coordinates Window](screenshots/enter_coords_window.png "Enter Point Coordinates Window") 
+![Enter Point Coordinates Window](screenshots/enter_coords_window.png "Enter Point Coordinates Window")
 
 ![Add POint Coordinates](screenshots/add_coords.png "Add Point Coordinates")
 
-## Creating Plots via the _Preset Features_ Menu <img src="screenshots/preset_features_button.png" width=35 height=35 />
+## Creating Plots via the _Preset Features_ Menu <img src="screenshots/preset_button.png" width=35 height=35 />
 
-![Preset Features Window](screenshots/preset_features_window.png "Preset Features Window") 
+![Preset Features Window](screenshots/preset_features_window.png "Preset Features Window")
 
 ## Viewing Observation and Class4 Data <img src="screenshots/obs_button.png" width=35 height=35 />
 
@@ -180,6 +295,3 @@ Checking the compare datasets box will bring up a side by side view of the data 
 2. Color Interpolation
 
 3. Bathymetry
-
-
-

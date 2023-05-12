@@ -259,43 +259,144 @@ Users can generate API scripts in either _R_ or _Python_ that will fetch the plo
 
 # Using the Ocean Navigator
 
-## Navigating Data Displayed on the _Main Map_
-
 ## Selecting Coordinates and Creating Plots with the _Draw Point Coordinates_ Tool
+
+To slect points of interest on the main map first clicking on the _Draw Point Coordinates_ button <img src="screenshots/draw_button.png" width=35 height=35 /> to open the drawing options:
 
 ![Drawing Options](screenshots/drawing_tools.png "Drawing Options")
 
-![Points, Line, and Area](screenshots/point_line_area.png "Points, Line, and Area")
+These options include:
 
-## Selecting Coordinates and Creating Plots with the _Enter Point Coordinates_ Tool <img src="screenshots/enter_button.png" width=35 height=35 />
+- _Point_, _Line_, and _Area_ toggle:
+
+  These buttons are used to toggle between the drawn feature type.
+  ![Points, Line, and Area](screenshots/point_line_area.png "Points, Line, and Area")
+
+- _Plot_ button:
+
+  Clicking this button will open the appropriate plotting window (see [Ocean Navigator Plot Windows](#ocean-navigator-plot-windows)). This button is only response if enough points have been drawn for the selected feature type; 1 for point, 2 for line, and 3 for area plots.
+
+- _Clear_ button:
+
+  This button will remove all features from the map.
+
+- _Undo_ button:
+
+  This button removes the last-drawn point.
+
+- _Close_ button:
+
+  Closes the plot options.
+
+To modify the location of one or more point users can click the _Enter Point Coordinates_ button <img src="screenshots/enter_button.png" width=35 height=35 /> to modify point locations.
+
+Once the desired points have been added and feature type selected, click the _Plot_ button to view the selected data.
+
+## Selecting Coordinates and Creating Plots with the _Enter Point Coordinates_ Tool
+
+Users can precisely select points of interest using the _Enter Point Coordinates_ tool. To open the _Enter Coordinates_ window first click on the _Enter Point Coordinates_ button <img src="screenshots/enter_button.png" width=35 height=35 />
 
 ![Enter Point Coordinates Window](screenshots/enter_coords_window.png "Enter Point Coordinates Window")
 
+The left side of the window contains a table for the coordinates enetered. If any points have been selected, whether through this window or other means, the table will already be populated.
+
+To add new coordinates to the table enter latitude and longitude values in the form to the right and click _Add_. The _Clear_ button will remove all points from the table.
+
 ![Add POint Coordinates](screenshots/add_coords.png "Add Point Coordinates")
 
-## Creating Plots via the _Preset Features_ Menu <img src="screenshots/preset_button.png" width=35 height=35 />
+Users can also import data from _csv_files by clicking on the \_Uploatd CSV_ button. The file must begin with a header containing "latitude" and "longitude" to indicate which columns hold these values.
+
+Users can click on values in the table to make futher changes, or remove them completely by clicking the _x_ icon on the right of their respective rows.
+
+Once satisfied with the chosen coordinates users can select a plot type from the _Point/Line/Area_ toggle and click the plot button to open the relevant [Plot Window](#ocean-navigator-plot-windows).
+
+## Creating Plots via the _Preset Features_ Menu
+
+The Ocean Navigator also has a number of preset features that may be of interest to users. To view the list of the preset features click on the \_Preset Features_button <img src="screenshots/preset_button.png" width=35 height=35 />
 
 ![Preset Features Window](screenshots/preset_features_window.png "Preset Features Window")
 
-## Viewing Observation and Class4 Data <img src="screenshots/obs_button.png" width=35 height=35 />
+Features are categorizaed into lists of Point, Line, or Area features. Click on any itsm from the list to add it to the main map. Note that any other features will be removed.
+
+![NAFO Divisions](screenshots/NAFO_areas.png "NAFO Divisions")
+
+Once features are added to the map users can plot their point/line/area data by clicking on them.
+
+## Viewing Observation and Class4 Data
+
+The Ocean Navigator has a variety of observation products available to its users. To
+display observation features on the map first click the _Observations_ button <img src="screenshots/obs_button.png" width=35 height=35 />. This will open the _Observation Options_ menu:
 
 ![Observation Options](screenshots/obs_tools.png "Observation Options")
 
-![Observation Window](screenshots/obs_window.png "Observation Window")
+These options are as follows:
 
-1.
-2.
-3.
-4.
-5.
+- _All:_
+
+  Select this option to view observations without any geographic constraints. This immediately opens the _Select Observations_ window.
+
+- _Select Area:_
+
+  This option allows users to view observations within a chosen area. When clicked the user is promped to draw an area polygon before the _Select Observations_ window is opened.
+
+- _Select Point:_
+
+  The _Select Point_ option allows users to select observation within a radius of a given coordinate. When clicked users will need to click on the desired location on the map to open the _Select Observations_ window.
+
+- _Class4:_
+
+  This option opens the _Class4 Selector_ used to view Class4 data. See [Displaying Class4 Data](#displaying-class4-data).
+
+- _Close:_
+
+  Click this button to close the _Observation Options_ menu.
+
+Once a selection has been made the _Select Observations_ window will open. This window gives users anumber of ways to wuery observation data and view the resulting products.
+
+![Observation Window](screenshots/obs_window.png "Select Observation Window")
+
+1. Observation Type
+
+   Here users can choose to view the observation product as individual points or tracks on the map. 
+
+2. Date & Variable Filters
+
+  Here users can specify a date range for the resulting observation data and the observed variable.
+
+3. Platform Filters 
+
+  This menu allows users to narrow their observation query to a specific plat form type. From there they can restrict their search to platforms matching a specific Metadata Key such as instrument identification numbers, name of the principal investigator, ship name, and more. These criteria are not applied to the search unless the switch is active.
+
+4. Depth Filter
+
+  This slider can be used to restrict observations to a particular depth range in the water column. Like the _Platform Filters_ this range is not applied unless the switch is active.
+
+5. Apply
+
+  Click _Apply_ to query the observations once all of the selections have been made.
+
+Once the user has completed the steps above the main map will be populated with observation points that meet their selection criteria. 
+
+![Observations displayed on map](screenshots/observations.png "Observations displayed on map")
+
+### Displaying Class4 Data
+
+Selecting the Class4 button from the _Observation Options_ opens the _Class4 Selector_. Class4 metrics are one of a number of validation tools used to validate GIOPS or RIOPS model forecasts by comparing temperature and salinity predictions to observations of the same quantites. 
+
+Class4 metrics are available in two categories; _Ocean Predict_, and _RIOPS Assimilated Observations_. _Ocean Predict_ products are Class4 validation products that compare data from the GIOPS forecast model against observations. This product also includes forecasts from other models which can be added to the comparison plots. The _RIOPS Assimilated Observations_ products are similar but only include data from the RIOPS forecast model. 
+
+The _Class4 Selector_ includes a dropdown menu to where users can toggle between to two Class4 product types and a calendar that shows the dates with available data for the selected product.
 
 ![Class4 Selector](screenshots/class4_selector.png "Class4 Selector")
 
+To add Class4 data to the map select the Class4 product type then a date of interest. The OceanNavigator will then draw the Class4 points on the map. These points are colored according the products RMS error i.e. how well the model fits the observed data. Green points indicate high agreement between the forecasted data and observation while red points indicated poor agreement. 
+
+![Class4 points displayed on map](screenshots/class4_points.png "Class4 points displayed on map")
+
 ## Comparing Datasets
 
-Checking the compare datasets box will bring up a side by side view of the data set. It will also provide settings in the left side bar for each view. Each view can be changed independently by setting the values in the corresponding settings box (ie left or right view). In addition, the plotting features, explained below in the Drawing section, will provide extra information when comparing datasets, most notably a difference plot will be shown when comparing variables that are similar.
-
-![Compare Datasets Toggle](screenshots/compare_toggle.png "Compare Datasets Toggle")
+Checking the compare datasets toggle switch ![Compare Datasets Toggle](screenshots/compare_toggle.png "Compare Datasets Toggle")
+will open the comparison view. The view includes two maps and corresponding Dataset Selector panels. Users can select from any two avialable datasets and make comparisons between them. Any action, such as pan or zoom actions, applied to one will be applied to the other. Feature selection will also apply to both maps and comparison plots will be made where possible. Examples of the comparison view and resulting transect and area plots are given below.
 
 ![Comparing Datasets](screenshots/compare_map.png "Comparing Datasets")
 
@@ -309,12 +410,52 @@ Checking the compare datasets box will bring up a side by side view of the data 
 
 1. Map
 
-   Projection
+   * _Projection:_
 
-   the global projection will be the view that most users will need, however for users that want to view the north or south poles those options exist in the drop down here.
+     Users can toggle between the Global (default), Arctic, or Antarctic projections.
 
-   Basemap
+   * _Basemap:_
+
+     Users can change the topography of the land and underlying bathymetry with this dropdown menu. 
 
 2. Color Interpolation
 
+   Because the model forecast data is discrete and can be relatively sparse interpolation is used to smooth and fill in areas on the maps data tiles.
+
+   * _Method:_
+
+      Users can change the interpolation method applied to the data tiles. _Gaussian Weighting_ is used by default but other methods, such as Bilinear and Nearest Neighbour interpolation, can be used instead.
+
+   * _Sampling Radius (km):_
+
+     The distance from each point used in the interpolation calculation.
+
+   * _Nearest Neighbours:_
+
+     The number of neightbours to use in the interpolation calculation.
+
+   * _Apply:_
+
+     Click this button to apply interpolation changes to the map.
+
 3. Bathymetry
+
+   * _Show Bathymetry Contours:_
+
+     This checkbox allows users to toggle the bathymetry contours drawn on the main map.
+
+   * _Bathymetry Opacity:_
+
+     Here users can adjust the opacity of the bathymetry contours.
+
+   * _Bathymetry Layer:_
+
+      This menu will allow users to select between bathymetry sources. At the momenty only _ETOP01_ is available.
+
+   * _Topography Shaded Relief:_
+
+       Check this box to add shaded relief to the basemap layer.
+
+   * _Apply:_
+
+     Click this button to apply bathymetry changes to the map.

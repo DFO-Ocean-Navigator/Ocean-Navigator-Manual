@@ -138,8 +138,6 @@ The _Point_ window contains a number of plot types appropriate for extracting da
 
    Similar to the main map's Dataset Selector. Here users can change the dataset, variable, and other parameters. Depending on the current plot tab selected these options may change. The Profile plotter allows users to select multiple variables to be displayed by holding shift and clicking on the variables of interest. This plot, and the virtual mooring plot also include a range selector that allows the user to modify the dependent variable axis range in the plot. When the Virtual Mooring tab is selected the dataset selector will include a time selector for the start and end times of the plot. The user can also check the _Show Location_ box to display a map of the points withinin the plot. Here they can also chagne the location of the selected point. The _Plot Options_ menu allows users to adjust the plot's size and provide an alternate title.
 
-
-
 ## Line
 
 ![Line Window](screenshots/line_window.png "Line Window")
@@ -160,7 +158,6 @@ The _Line_ window plots data along a route specified by two or more point coordi
    - **Show Map Location:** Check this option to include a map of the selected line in the plot (checked by default).
    - **Plot Options:** Allows users to adjust the plot's size and provide an alternate title.
 
-
    If a _transect_ plot is seclected:
 
    - **Surface Variable:** Users can plot the surface vlues along the transect for any variable listed in the dropdown menu.
@@ -179,28 +176,30 @@ The _Line_ window plots data along a route specified by two or more point coordi
 
 ![Area Window](screenshots/area_window.png "Area Window")
 
+The _Area_ window plots data within a polygon specified by three or more point coordinates.
+
 1. Area Settings
 
    This panel provides the following options for the selected plot.
 
-   * __Compare Datasets:__ Checking this option allows users to compare two varaibles from any of the avilable datasets along the selected line. When selected a second Dataset selector becomes avilable to specify the variable to compare to.
-   * __Show Bathymetry Contours:__ This option adds bathymetry contours to the area plot (checked by default)
-   * __Show Selected Areas:__ Checkbox indicated whther to include the selected area in the plot (checked by default).
-   * __Arrows Menu:__ Selecting a variable from this menu adds its quiver arrows to the area plot.
-   * __Additional Contours:__ Selecting a variable from this menu adds its isolines to the plot. 
-   * __Plot Options:__ Allows users to adjust the plot's size and provide an alternate title.
+   - **Compare Datasets:** Checking this option allows users to compare two varaibles from any of the avilable datasets along the selected line. When selected a second Dataset selector becomes avilable to specify the variable to compare to.
+   - **Show Bathymetry Contours:** This option adds bathymetry contours to the area plot (checked by default)
+   - **Show Selected Areas:** Checkbox indicated whther to include the selected area in the plot (checked by default).
+   - **Arrows Menu:** Selecting a variable from this menu adds its quiver arrows to the area plot.
+   - **Additional Contours:** Selecting a variable from this menu adds its isolines to the plot.
+   - **Plot Options:** Allows users to adjust the plot's size and provide an alternate title.
 
 2. Subset Panel
 
-   The subset panel allows users to extract data from the plotted area and download in a number of NetCDF file formats. 
+   The subset panel allows users to extract data from the plotted area and download in a number of NetCDF file formats.
 
-   * __Variables:__ Users can select one or more varaibles to add to the NetCDF subset product from this menu. To select multiple variables hold the shift key while making your selection.
-   * __Select Time Range:__ Checking this box will allow users to create a subset over a time range. 
-   * __Time Selector:__ Specify the timestamp for the subset data. If a time range is selected two selectors will allow users to pick the start and end times. 
-   * __Output Format Dropdown:__ Users can chose from a number of NetCDF formats for the output. 
-   * __Compress as *.zip:__ Checking this box will compress the output file in a .zip archive. 
-   * __Save:__ Once all of the above ahve been selected click this button so save the subset product. 
-   * __API Scripts:__ Users can download API scripts to retrieve the selected subset data in _R_ or _Python_.
+   - **Variables:** Users can select one or more varaibles to add to the NetCDF subset product from this menu. To select multiple variables hold the shift key while making your selection.
+   - **Select Time Range:** Checking this box will allow users to create a subset over a time range.
+   - **Time Selector:** Specify the timestamp for the subset data. If a time range is selected two selectors will allow users to pick the start and end times.
+   - **Output Format Dropdown:** Users can chose from a number of NetCDF formats for the output.
+   - **Compress as \*.zip:** Checking this box will compress the output file in a .zip archive.
+   - **Save:** Once all of the above ahve been selected click this button so save the subset product.
+   - **API Scripts:** Users can download API scripts to retrieve the selected subset data in _R_ or _Python_.
 
 3. Save Options
 
@@ -214,9 +213,33 @@ The _Line_ window plots data along a route specified by two or more point coordi
 
 ![Observation Window](screenshots/obs_plot_window.png "Observation Window")
 
+The _Observation_ window allows users to compare a selected observation to model data. The observation window will contain two figures with the observtiondata on the left and model data on the right.
+
+1. Dataset Selector
+
+   A limited dataset selector where users can change the dataset and its timestamp, and the location of the point compared to the observation. Since the selected dataset may not contain data from the same time as the observation the most recent timestamp is selected by default. This dataset selector also includes an _Observation Variables_ list where users can choose which observed metric to compare to the model.
+
+2. Save Options
+
+   See [Saving Plots and Data](#saving-plots-and-data).
+
 ## Class4
 
 ![Class4 Window](screenshots/class4_window.png "Class4 Window")
+
+Class4 metrics are one of a number of validation tools used to validate GIOPS or RIOPS model forecasts by comparing temperature and salinity predictions to observations of the same quantites.
+
+1. Class4 Settings
+
+   - **Show Location:** Check this option to include a map of the selected line in the plot.
+   - **Show Climatology:** Check this option to include climatology data in the figures.
+   - **Additional Models:** Users can also add other models to the figures to comparison. To add multiple hold the shift key while selecting models.
+   - **Show Error:** Check this option to view the error of the models compared to the observation.
+   - **Plot Options:** Allows users to adjust the plot's size and provide an alternate title.
+
+2. Save Options
+
+   See [Saving Plots and Data](#saving-plots-and-data).
 
 ## Saving Plots and Data
 

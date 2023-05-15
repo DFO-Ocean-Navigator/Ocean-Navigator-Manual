@@ -312,7 +312,7 @@ Once satisfied with the chosen coordinates users can select a plot type from the
 
 ## Creating Plots via the _Preset Features_ Menu
 
-The Ocean Navigator also has a number of preset features that may be of interest to users. To view the list of the preset features click on the \_Preset Features_button <img src="screenshots/preset_button.png" width=35 height=35 />
+The Ocean Navigator also has a number of preset features that may be of interest to users. To view the list of the preset features click on the \_Preset Features_ button <img src="screenshots/preset_button.png" width=35 height=35 />
 
 ![Preset Features Window](screenshots/preset_features_window.png "Preset Features Window")
 

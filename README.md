@@ -166,7 +166,7 @@ The _Line_ window plots data along a route specified by two or more point coordi
 
 3. Save Options
 
-   See [Saving Plots and Data](#saving-plots-and-data).
+   See [Saving Plot Data and Images](#saving-plot-images-and-data).
 
 4. Dataset Selector
 
@@ -203,7 +203,7 @@ The _Area_ window plots data within a polygon specified by three or more point c
 
 3. Save Options
 
-   See [Saving Plots and Data](#saving-plots-and-data).
+   See [Saving Plot Images and Data](#saving-plot-images-and-data).
 
 4. Dataset Selector
 
@@ -221,7 +221,7 @@ The _Observation_ window allows users to compare a selected observation to model
 
 2. Save Options
 
-   See [Saving Plots and Data](#saving-plots-and-data).
+   See [Saving Plot Images and Data](#saving-plot-images-and-data).
 
 ## Class4
 
@@ -239,9 +239,9 @@ Class4 metrics are one of a number of validation tools used to validate GIOPS or
 
 2. Save Options
 
-   See [Saving Plots and Data](#saving-plots-and-data).
+   See [Saving Plot Images and Data](#saving-plot-images-and-data).
 
-## Saving Plots and Data
+## Saving Plot Images and Data
 
 The are three sets of options avaialble to users for extracting the plotted data:
 

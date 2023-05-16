@@ -138,6 +138,10 @@ The _Point_ window contains a number of plot types appropriate for extracting da
 
    Similar to the main map's Dataset Selector. Here users can change the dataset, variable, and other parameters. Depending on the current plot tab selected these options may change. The Profile plotter allows users to select multiple variables to be displayed by holding shift and clicking on the variables of interest. This plot, and the virtual mooring plot also include a range selector that allows the user to modify the dependent variable axis range in the plot. When the Virtual Mooring tab is selected the dataset selector will include a time selector for the start and end times of the plot. The user can also check the _Show Location_ box to display a map of the points within the plot. Here they can also change the location of the selected point. The _Plot Options_ menu allows users to adjust the plot's size and provide an alternate title.
 
+3. Save Options
+
+   See [Saving Plot Images and Data](#saving-plot-images-and-data).
+
 ## Line
 
 ![Line Window](screenshots/line_window.png "Line Window")
@@ -270,6 +274,7 @@ These options include:
 - _Point_, _Line_, and _Area_ toggle:
 
   These buttons are used to toggle between the drawn feature type.
+
   ![Points, Line, and Area](screenshots/point_line_area.png "Points, Line, and Area")
 
 - _Plot_ button:
@@ -302,7 +307,7 @@ The left side of the window contains a table for the coordinates entered. If any
 
 To add new coordinates to the table enter latitude and longitude values in the form to the right and click _Add_. The _Clear_ button will remove all points from the table.
 
-![Add POint Coordinates](screenshots/add_coords.png "Add Point Coordinates")
+![Add Point Coordinates](screenshots/add_coords.png "Add Point Coordinates")
 
 Users can also import data from _csv_files by clicking on the \_Uploatd CSV_ button. The file must begin with a header containing "latitude" and "longitude" to indicate which columns hold these values.
 
@@ -312,7 +317,7 @@ Once satisfied with the chosen coordinates users can select a plot type from the
 
 ## Creating Plots via the _Preset Features_ Menu
 
-The Ocean Navigator also has a number of preset features that may be of interest to users. To view the list of the preset features click on the \_Preset Features_ button <img src="screenshots/preset_button.png" width=35 height=35 />
+The Ocean Navigator also has a number of preset features that may be of interest to users. To view the list of the preset features click on the _Preset Features_ button <img src="screenshots/preset_button.png" width=35 height=35 />
 
 ![Preset Features Window](screenshots/preset_features_window.png "Preset Features Window")
 
@@ -357,39 +362,39 @@ Once a selection has been made the _Select Observations_ window will open. This 
 
 1. Observation Type
 
-   Here users can choose to view the observation product as individual points or tracks on the map. 
+   Here users can choose to view the observation product as individual points or tracks on the map.
 
 2. Date & Variable Filters
 
-  Here users can specify a date range for the resulting observation data and the observed variable.
+Here users can specify a date range for the resulting observation data and the observed variable.
 
-3. Platform Filters 
+3. Platform Filters
 
-  This menu allows users to narrow their observation query to a specific plat form type. From there they can restrict their search to platforms matching a specific Metadata Key such as instrument identification numbers, name of the principal investigator, ship name, and more. These criteria are not applied to the search unless the switch is active.
+This menu allows users to narrow their observation query to a specific plat form type. From there they can restrict their search to platforms matching a specific Metadata Key such as instrument identification numbers, name of the principal investigator, ship name, and more. These criteria are not applied to the search unless the switch is active.
 
 4. Depth Filter
 
-  This slider can be used to restrict observations to a particular depth range in the water column. Like the _Platform Filters_ this range is not applied unless the switch is active.
+This slider can be used to restrict observations to a particular depth range in the water column. Like the _Platform Filters_ this range is not applied unless the switch is active.
 
 5. Apply
 
-  Click _Apply_ to query the observations once all of the selections have been made.
+Click _Apply_ to query the observations once all of the selections have been made.
 
-Once the user has completed the steps above the main map will be populated with observation points that meet their selection criteria. 
+Once the user has completed the steps above the main map will be populated with observation points that meet their selection criteria.
 
 ![Observations displayed on map](screenshots/observations.png "Observations displayed on map")
 
 ### Displaying Class4 Data
 
-Selecting the Class4 button from the _Observation Options_ opens the _Class4 Selector_. Class4 metrics are one of a number of validation tools used to validate GIOPS or RIOPS model forecasts by comparing temperature and salinity predictions to observations of the same quantities. 
+Selecting the Class4 button from the _Observation Options_ opens the _Class4 Selector_. Class4 metrics are one of a number of validation tools used to validate GIOPS or RIOPS model forecasts by comparing temperature and salinity predictions to observations of the same quantities.
 
-Class4 metrics are available in two categories; _Ocean Predict_, and _RIOPS Assimilated Observations_. _Ocean Predict_ products are Class4 validation products that compare data from the GIOPS forecast model against observations. This product also includes forecasts from other models which can be added to the comparison plots. The _RIOPS Assimilated Observations_ products are similar but only include data from the RIOPS forecast model. 
+Class4 metrics are available in two categories; _Ocean Predict_, and _RIOPS Assimilated Observations_. _Ocean Predict_ products are Class4 validation products that compare data from the GIOPS forecast model against observations. This product also includes forecasts from other models which can be added to the comparison plots. The _RIOPS Assimilated Observations_ products are similar but only include data from the RIOPS forecast model.
 
 The _Class4 Selector_ includes a dropdown menu to where users can toggle between to two Class4 product types and a calendar that shows the dates with available data for the selected product.
 
 ![Class4 Selector](screenshots/class4_selector.png "Class4 Selector")
 
-To add Class4 data to the map select the Class4 product type then a date of interest. The Ocean Navigator will then draw the Class4 points on the map. These points are colored according the products RMS error i.e. how well the model fits the observed data. Green points indicate high agreement between the forecasted data and observation while red points indicated poor agreement. 
+To add Class4 data to the map select the Class4 product type then a date of interest. The Ocean Navigator will then draw the Class4 points on the map. These points are colored according the products RMS error i.e. how well the model fits the observed data. Green points indicate high agreement between the forecasted data and observation while red points indicated poor agreement.
 
 ![Class4 points displayed on map](screenshots/class4_points.png "Class4 points displayed on map")
 
@@ -410,52 +415,66 @@ will open the comparison view. The view includes two maps and corresponding Data
 
 1. Map
 
-   * _Projection:_
+   - _Projection:_
 
      Users can toggle between the Global (default), Arctic, or Antarctic projections.
 
-   * _Basemap:_
+   - _Basemap:_
 
-     Users can change the topography of the land and underlying bathymetry with this dropdown menu. 
+     Users can change the topography of the land and underlying bathymetry with this dropdown menu.
 
 2. Color Interpolation
 
    Because the model forecast data is discrete and can be relatively sparse interpolation is used to smooth and fill in areas on the maps data tiles.
 
-   * _Method:_
+   - _Method:_
 
-      Users can change the interpolation method applied to the data tiles. _Gaussian Weighting_ is used by default but other methods, such as Bilinear and Nearest Neighbour interpolation, can be used instead.
+     Users can change the interpolation method applied to the data tiles. _Gaussian Weighting_ is used by default but other methods, such as Bilinear and Nearest Neighbour interpolation, can be used instead.
 
-   * _Sampling Radius (km):_
+   - _Sampling Radius (km):_
 
      The distance from each point used in the interpolation calculation.
 
-   * _Nearest Neighbours:_
+   - _Nearest Neighbours:_
 
      The number of neighbours to use in the interpolation calculation.
 
-   * _Apply:_
+   - _Apply:_
 
      Click this button to apply interpolation changes to the map.
 
 3. Bathymetry
 
-   * _Show Bathymetry Contours:_
+   - _Show Bathymetry Contours:_
 
      This checkbox allows users to toggle the bathymetry contours drawn on the main map.
 
-   * _Bathymetry Opacity:_
+   - _Bathymetry Opacity:_
 
      Here users can adjust the opacity of the bathymetry contours.
 
-   * _Bathymetry Layer:_
+   - _Bathymetry Layer:_
 
-      This menu will allow users to select between bathymetry sources. At the moment only _ETOP01_ is available.
+     This menu will allow users to select between bathymetry sources. At the moment only _ETOP01_ is available.
 
-   * _Topography Shaded Relief:_
+   - _Topography Shaded Relief:_
 
-       Check this box to add shaded relief to the basemap layer.
+     Check this box to add shaded relief to the basemap layer.
 
-   * _Apply:_
+   - _Apply:_
 
      Click this button to apply bathymetry changes to the map.
+
+# Demonstrational Videos
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/pid28Nuh3CQ"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Create Area Plot and save *.csv"
+  >
+</iframe>
+

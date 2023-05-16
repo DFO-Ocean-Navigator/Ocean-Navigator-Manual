@@ -297,6 +297,13 @@ To modify the location of one or more point users can click the _Enter Point Coo
 
 Once the desired points have been added and feature type selected, click the _Plot_ button to view the selected data.
 
+### Related Demonstrational Videos:
+
+* [Create point plot and virtual mooring](#create-point-plot-and-virtual-mooring)
+* [Create Virtual Mooring for current and bearing data](#create-virtual-mooring-for-current-and-bearing-data)
+* [Create transect and Hovmoller plot](#create-transect-and-hovmoller-plot)
+* [Create Area Plot and save *.csv](#create-area-plot-and-save-csv)
+
 ## Selecting Coordinates and Creating Plots with the _Enter Point Coordinates_ Tool
 
 Users can precisely select points of interest using the _Enter Point Coordinates_ tool. To open the _Enter Coordinates_ window first click on the _Enter Point Coordinates_ button <img src="screenshots/enter_button.png" width=35 height=35 />
@@ -315,6 +322,11 @@ Users can click on values in the table to make further changes, or remove them c
 
 Once satisfied with the chosen coordinates users can select a plot type from the _Point/Line/Area_ toggle and click the plot button to open the relevant [Plot Window](#ocean-navigator-plot-windows).
 
+### Related Demonstrational Videos:
+
+* [Creating plots using Enter Point Coordinates and adding quivers](#creating-plots-using-enter-point-coordinates-and-adding-quivers)
+
+
 ## Creating Plots via the _Preset Features_ Menu
 
 The Ocean Navigator also has a number of preset features that may be of interest to users. To view the list of the preset features click on the _Preset Features_ button <img src="screenshots/preset_button.png" width=35 height=35 />
@@ -326,6 +338,10 @@ Features are categorized into lists of Point, Line, or Area features. Click on a
 ![NAFO Divisions](screenshots/NAFO_areas.png "NAFO Divisions")
 
 Once features are added to the map users can plot their point/line/area data by clicking on them.
+
+### Related Demonstrational Videos:
+
+# [Creating climatology plots for predefined areas](#creating-climatology-plots-for-predefined-areas)
 
 ## Viewing Observation and Class4 Data
 
@@ -398,6 +414,10 @@ To add Class4 data to the map select the Class4 product type then a date of inte
 
 ![Class4 points displayed on map](screenshots/class4_points.png "Class4 points displayed on map")
 
+### Related Demonstrational Videos:
+
+* [Plot Class4 data](#plot-class4-data)
+
 ## Comparing Datasets
 
 Checking the compare datasets toggle switch ![Compare Datasets Toggle](screenshots/compare_toggle.png "Compare Datasets Toggle")
@@ -408,6 +428,10 @@ will open the comparison view. The view includes two maps and corresponding Data
 ![Transect Comparison](screenshots/compare_line.png "Transect Comparison")
 
 ![Area Comparison](screenshots/compare_area.png "Area Comparison")
+
+### Related Demonstrational Videos:
+
+* [Compare datasets and save plot](#compare-datasets-and-save-plot)
 
 ## Changing Map Settings <img src="screenshots/settings_button.png" width=35 height=35 />
 
@@ -467,6 +491,60 @@ will open the comparison view. The view includes two maps and corresponding Data
 
 # Demonstrational Videos
 
+## Create point plot and virtual mooring
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/gcmjtYSJs8c"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Create point plot and virtual mooring"
+  >
+</iframe>
+
+## Create Virtual Mooring for current and bearing data
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/pzzFh8cOLog"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Create Virtual Mooring for current and bearing data"
+  >
+</iframe>
+
+## How to modify point plot range and add multiple variables
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/NbB9iOoagiA"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: How to modify point plot range and add multiple variables"
+  >
+</iframe>
+
+## Create transect and Hovmoller plot
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/zYoSJq306XI"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Create transect and Hovmoller plot"
+  >
+</iframe>
+
+## Create Area Plot and save *.csv
+
 <iframe
   width="853"
   height="480"
@@ -475,6 +553,71 @@ will open the comparison view. The view includes two maps and corresponding Data
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
   title="Ocean Navigator: Create Area Plot and save *.csv"
+  >
+</iframe>
+
+## Subset NetCDF file and save
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/QIDEgiDuUqI"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Subset NetCDF file and save"
+  >
+</iframe>
+
+## Creating plots using Enter Point Coordinates and adding quivers
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/PqJ99yOG7WI"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Creating plots using Enter Point Coordinates and adding quivers"
+  >
+</iframe>
+
+## Creating climatology plots for predefined areas
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/MCCmcexArXA"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Creating climatology plots for predefined areas"
+  >
+</iframe>
+
+## Plot Class4 data
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/ABid30zxSfc"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Plot CLASS4 data"
+  >
+</iframe>
+
+## Compare datasets and save plot
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/tu44-hjqY0o"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Compare datasets and save plot"
   >
 </iframe>
 

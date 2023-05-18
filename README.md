@@ -2,6 +2,17 @@ The Ocean Navigator is a data visualization tool that enables users to discover 
 
 For specific technical specifications of each forecast or reanalysis product please consult the source at the links provided.
 
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/rMVSFRfMrqE"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: General Introduction"
+  >
+</iframe>
+
 # Ocean Navigator Overview
 
 ![Ocean Navigator Overview](screenshots/overview.png "Ocean Navigator Overview")
@@ -598,6 +609,19 @@ Users can change many of the Global Map parameters to suit there needs. The avai
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
   allowFullScreen
   title="Ocean Navigator: Creating climatology plots for predefined areas"
+  >
+</iframe>
+
+## Plotting in-situ ocean Observation
+
+<iframe
+  width="853"
+  height="480"
+  src="https://www.youtube.com/embed/9hAgSWPVP9Q"
+  frameBorder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowFullScreen
+  title="Ocean Navigator: Plotting in-situ ocean Observation"
   >
 </iframe>
 

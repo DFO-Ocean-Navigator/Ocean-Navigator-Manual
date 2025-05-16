@@ -107,7 +107,7 @@ Clicking this button opens the _Info/Help_ window where users can find dataset m
 
 1. Add Map Annotation Button
 
-   Allows users to add labels to the map.
+   Allows users to add labels to the map. See [Adding Map Annotations](#adding-map-annotations) for more detail.
 
 2. Get link Button
 

@@ -1,5 +1,3 @@
-# Ocean Navigator User Manual (v9.6)
-
 The Ocean Navigator is a data visualization tool that enables users to discover and view ocean model output and observations quickly and easily. All model nowcast and forecast information are based on hydrodynamic models and should be considered as computer-generated guidance. These are an estimate of the oceanographic environment (i.e. potential temperature, salinity, and currents) and not directly measured in-situ observation of ocean conditions. The reanalysis products available though the Ocean Navigator are developed to be as close as possible to collected ocean observations and in agreement with model physics, giving a backward looking description of the ocean environment.
 
 For specific technical specifications of each forecast or reanalysis product please consult the source at the links provided.

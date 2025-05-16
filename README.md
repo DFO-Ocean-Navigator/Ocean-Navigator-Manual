@@ -1,21 +1,12 @@
-The Ocean Navigator is a data visualization tool that enables users to discover and view 2D and 3D ocean model output quickly and easily. All model nowcast and forecast information is based on a hydrodynamic model and should be considered as computer-generated guidance. These are an estimate of the oceanographic environment (i.e. potential temperature, salinity, and currents) and not directly measured in-situ observation of ocean conditions. The reanalysis products available though the Ocean Navigator are developed to be as close as possible to collected ocean observations and in agreement with model physics, giving a backward looking description of the ocean environment.
+# Ocean Navigator User Manual (v9.6)
+
+The Ocean Navigator is a data visualization tool that enables users to discover and view ocean model output and observations quickly and easily. All model nowcast and forecast information are based on hydrodynamic models and should be considered as computer-generated guidance. These are an estimate of the oceanographic environment (i.e. potential temperature, salinity, and currents) and not directly measured in-situ observation of ocean conditions. The reanalysis products available though the Ocean Navigator are developed to be as close as possible to collected ocean observations and in agreement with model physics, giving a backward looking description of the ocean environment.
 
 For specific technical specifications of each forecast or reanalysis product please consult the source at the links provided.
 
-<iframe
-  width="853"
-  height="480"
-  src="https://www.youtube.com/embed/rMVSFRfMrqE"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowFullScreen
-  title="Ocean Navigator: General Introduction"
-  >
-</iframe>
-
 # Ocean Navigator Overview
 
-![Ocean Navigator Overview](screenshots/overview.png "Ocean Navigator Overview")
+![Ocean Navigator Overview](images/overview.png "Ocean Navigator Overview")
 
 ### 1. Global Map
 
@@ -25,13 +16,13 @@ The map is highly customizable and users are given the ability to change the map
 
 ### 2. Dataset Selection Panel
 
-![Dataset Selection Panel](screenshots/dataset_selector.png "Dataset Selection Panel")
+![Dataset Selection Panel](images/dataset_selector.png "Dataset Selection Panel")
 
 The dataset selection panel allows users to view datasets from the Ocean Navigator's data catalog on the global map. There are several menus that users can select data from. Once the user has selected a data product and the relevant parameters they must click the _Go_ button to display the data on the global map. The dataset selection menus are described in detail below.
 
 1. Dataset Selector
 
-   ![Dataset Dropdown Menu](screenshots/dataset_dropdown.png "Dataset Dropdown Menu")
+   ![Dataset Dropdown Menu](images/dataset_dropdown.png "Dataset Dropdown Menu")
 
    The dataset dropdown allows users to select data from one of the many forecast models available in the Ocean Navigator. Within the dataset dropdown menu data is first grouped by forecast then other important characterisctics such as dimensionality, time range, and climatologies.
 
@@ -41,9 +32,9 @@ The dataset selection panel allows users to view datasets from the Ocean Navigat
 
 3. Quiver Selector
 
-   Users can overlay vector variables as quiver arrows over the global map view by selecting a variable from the quiver dropdown menu.
+   Users can overlay vector variables as quiver arrows over the global map view by selecting a variable from the quiver dropdown menu. The quiver overlay adjusts to the map zoom level and users can also use the _Quiver Density_ slider to fine tune the display.
 
-   ![Quiver Arrows](screenshots/quiver_arrows.png "Quiver Arrows")
+   ![Quiver Arrows](images/quiver_arrows.png "Quiver Arrows")
 
 4. Depth Selector
 
@@ -54,75 +45,83 @@ The dataset selection panel allows users to view datasets from the Ocean Navigat
    This switch allows users to display two datasets simultaneously and make comparison line and area plots between the two. See [Comparing Datasets](#Comparing-Datasets) for more details on how to use this feature.
 
 6. Timestamp Slider
-   ![Time Slider](screenshots/time_slider.png "Time Slider")
+   ![Time Slider](images/time_slider.png "Time Slider")
 
-   Users can select the model forecast time on the global map using the _timestamp slider_. The currently selected time is indicated by the slider thumb <img src="screenshots/slider_thumb.png" width=20 height=20 />.
+   Users can select the model forecast time on the global map using the _timestamp slider_. The currently selected time is indicated by the slider thumb <img src="images/slider_thumb.png" width=20 height=20 />.
 
-   To select a new timestamp users can click on any tick along the timestamp slider or select an adjacent timestamp using the previous and next buttons located on each end of the slider <img src="screenshots/chevron.png" height=20 />.
+   To select a new timestamp users can click on any tick along the timestamp slider or select an adjacent timestamp using the previous and next buttons located on each end of the slider <img src="images/chevron.png" height=20 />.
 
-   Due to size constraints the timestamp slider only displays labels for major ticks at 00:00 and 12:00 for hourly datasets but a tooltip will appear over the minor ticks to indicate their values. For datasets with time ranges beyond the currently displayed timestamps the <img src="screenshots/double_chevron.png" height=20 /> buttons can be used to change which group of timestamps are displayed.
+   Due to size constraints the timestamp slider only displays labels for major ticks at 00:00 and 12:00 for hourly datasets but a tooltip will appear over the minor ticks to indicate their values. For datasets with time ranges beyond the currently displayed timestamps the <img src="images/double_chevron.png" height=20 /> buttons can be used to change which group of timestamps are displayed.
 
-7. Go Button
+7. Hide Data Lay Button
+
+   This button allows users to toggle display of the data layer and view underlying bathymetry. 
+
+8. Go Button
 
    The _Go Button_ is used to enact the changes that the user has made through the menus above.
 
 ### 3. Colormap Scale Viewer
 
-![Colormap Scale Viewer](screenshots/scale_viewer.png "Colormap Scale Viewer")
+![Colormap Scale Viewer](images/scale_viewer.png "Colormap Scale Viewer")
 
 The _Colormap Scale Viewer_ displays the value range the currently displayed variable. Clicking on the data scale viewer will reveal the _Colormap Range_ selector. Here users can adjust the maximum and minimum values of the current colormap by entering new values, or clicking the _Auto_ button which will scale the colormap to the data range within the area currently visible on the map. Clicking _Default_ will restore the original colormap range.
 
 ### 4. Ocean Navigator Map Tools
 
-#### Draw Point Coordinates <img src="screenshots/draw_button.png" width=35 height=35 />
+#### Draw Map Features <img src="images/draw_button.png" width=35 height=35 />
 
-Clicking this button enters drawing mode and the Navigator's drawing options are displayed. The drawing options provide buttons to change the drawn feature type (point, line, or area), undo a point, clear the map, and plot the features added by the user. Once points have been added to the map their locations can also be modified using the [Enter Point Coordinates window](#enter-point-coordinates). For more details on drawing coordinates and plotting see [Selecting Coordinates and Creating Plots with the _Draw Point Coordinates_ Tool](#selecting-coordinates-and-creating-plots-with-the-draw-point-coordinates-tool).
+Clicking this button enters drawing mode and the Navigator's drawing options are displayed. The drawing options provide buttons to change the drawn feature type (point, line, or area), undo a point, clear the map, and plot the features added by the user. Once points have been added to the map their locations can also be modified using the [Edit Map Features window](#edit-map-features). For more details on drawing coordinates and plotting see [Adding Map Features with the _Draw Map Features_ Tool](#adding-map-features-with-the-draw-map-features-tool).
 
-#### Enter Point Coordinates <img src="screenshots/enter_button.png" width=35 height=35 />
+#### Edit Map Features <img src="images/edit_button.png" width=35 height=35 />
 
-Selecting this option displays the _Enter Point Coordinates window_. This feature allows users to enter the exact location of points of interest and plot data at those locations. Users also have the option of importing point coordinates from a CSV file. Like the _Draw Point Coordinates_ tool, users can select from a the standard feature types and plot the selected data. Any points present on the map, whether they have been previous entered though this window, imported from a CSV, or drawn on the map, can be modified in this window. See [Selecting Coordinates and Creating Plots with the _Enter Point Coordinates_ Tool](#selecting-coordinates-and-creating-plots-with-the-enter-point-coordinates-tool) section for more information.
+Selecting this option displays the _Edit Map Features window_. This feature allows users to enter the exact location of points of interest and plot data at those locations. Users also have the option of importing coordinates from a CSV file. Like the _Draw Map Features_ tool, users can select from a the standard feature types and plot the selected data. Any points present on the map, whether they have been previous entered though this window, imported from a CSV, or drawn on the map, can be modified in this window. See [Adding and Modifying Map Features with the _Enter Point Coordinates_ Tool](#adding-and-modifying-map-features-with-the-edit-map-features-tool) section for more information.
 
-#### Preset Features <img src="screenshots/preset_button.png" width=35 height=35 />
+#### Preset Features <img src="images/preset_button.png" width=35 height=35 />
 
 The Ocean Navigator also provides users with a number of preset points, lines, and areas that may be of interest to users. Clicking on this button will present the user with a menu where they can select one of these features and add it to the map. Once added, features can be plotted by clicking on them. Note that selecting any of these options will remove any other features from the map.
 
-#### Observations <img src="screenshots/obs_button.png" width=35 height=35 />
+#### Observations <img src="images/obs_button.png" width=35 height=35 />
 
 The _Observations_ button allows users to access the Ocean Navigator's observations database. When clicked the Observation options which gives the user a number of options for selecting observations or displaying Class4 data. For a more detailed description of these options see [Viewing Observation and Class4 Data](#viewing-observation-and-class4-data).
 
-#### Plot <img src="screenshots/plot_button.png" width=35 height=35 />
+#### Plot <img src="images/plot_button.png" width=35 height=35 />
 
 The _Plot_ button behavior is dependent on the data displayed on the map. For user selected point, lines, or areas clicking this button will open the appropriate [plot window](#ocean-navigator-plot-windows). In the event that multiple points were selected the resulting plot will contain all of them. For preset features, observations, and Class4 points clicking this button will open a plot window for the most recently selected feature.
 
-#### Reset Map <img src="screenshots/reset_button.png" width=35 height=35 />
+#### Reset Map <img src="images/reset_button.png" width=35 height=35 />
 
 The _Reset Map_ button removes all features from the map.
 
-#### Settings <img src="screenshots/settings_button.png" width=35 height=35 />
+#### Settings <img src="images/settings_button.png" width=35 height=35 />
 
 This button will open the [settings window](#changing-map-settings) where users can modify the global map.
 
-#### Info/Help <img src="screenshots/info-help_button.png" width=35 height=35 />
+#### Info/Help <img src="images/info-help_button.png" width=35 height=35 />
 
 Clicking this button opens the _Info/Help_ window where users can find dataset metadata, variable definitions, and help documents, including this one.
 
 ### 5. Additional Options
 
-![Additional Options](screenshots/additional_options.png "Additional Options")
+![Additional Options](images/additional_options.png "Additional Options")
 
-1. Get link Button
+1. Add Map Annotation Button
+
+   Allows users to add labels to the map.
+
+2. Get link Button
 
    This button opens the _Share Link_ window. Here, users can generate a link to the current state of the Ocean Navigator and share it with others. When accessing the application through this link the current dataset options will be restored.
 
-2. Language Selector
+3. Language Selector
 
    Allows users to toggle between English and French.
 
-3. Cursor Coordinates
+4. Cursor Coordinates
 
    Displays the current latitude/longitude coordinates of the mouse cursor.
 
-4. Zoom Buttons
+5. Zoom Buttons
 
    These buttons can be used to change the zoom level of the global map.
 
@@ -132,7 +131,7 @@ Users can produce a number of plot types from points of interest within the Ocea
 
 ## Point
 
-![Point Window](screenshots/point_window.png "Point Window")
+![Point Window](images/point_window.png "Point Window")
 
 The _Point_ window contains a number of plot types appropriate for extracting data from individual point coordinates.
 
@@ -157,7 +156,7 @@ The _Point_ window contains a number of plot types appropriate for extracting da
 
 ## Line
 
-![Line Window](screenshots/line_window.png "Line Window")
+![Line Window](images/line_window.png "Line Window")
 
 The _Line_ window plots data along a route specified by two or more point coordinates.
 
@@ -191,7 +190,7 @@ The _Line_ window plots data along a route specified by two or more point coordi
 
 ## Area
 
-![Area Window](screenshots/area_window.png "Area Window")
+![Area Window](images/area_window.png "Area Window")
 
 The _Area_ window plots data within a polygon specified by three or more point coordinates.
 
@@ -228,7 +227,7 @@ The _Area_ window plots data within a polygon specified by three or more point c
 
 ## Observation
 
-![Observation Window](screenshots/obs_plot_window.png "Observation Window")
+![Observation Window](images/obs_plot_window.png "Observation Window")
 
 The _Observation_ window allows users to compare a selected observation to model data. The observation window will contain two figures with the observtion data on the left and model data on the right.
 
@@ -242,7 +241,7 @@ The _Observation_ window allows users to compare a selected observation to model
 
 ## Class4
 
-![Class4 Window](screenshots/class4_window.png "Class4 Window")
+![Class4 Window](images/class4_window.png "Class4 Window")
 
 Class4 metrics are one of a number of validation tools used to validate GIOPS or RIOPS model forecasts by comparing temperature and salinity predictions to observations of the same quantities.
 
@@ -276,23 +275,19 @@ Users can generate API scripts in either _R_ or _Python_ that will fetch the plo
 
 # Using the Ocean Navigator
 
-## Selecting Coordinates and Creating Plots with the _Draw Point Coordinates_ Tool
+## Adding Map Features with the _Draw Map Features_ Tool
 
-To select points of interest on the global map first clicking on the _Draw Point Coordinates_ button <img src="screenshots/draw_button.png" width=35 height=35 /> to open the drawing options:
+To select points of interest on the global map first clicking on the _Draw Map Features_ button <img src="images/draw_button.png" width=35 height=35 /> to open the drawing options:
 
-![Drawing Options](screenshots/drawing_tools.png "Drawing Options")
+![Drawing Options](images/drawing_tools.png "Drawing Options")
 
 These options include:
 
 - _Point_, _Line_, and _Area_ toggle:
 
-  These buttons are used to toggle between the drawn feature type.
+  These buttons are used to toggle between the drawn feature type. To complete a line or area double click at the ending location. Area features can also be completed by clicking on the starting point.
 
-  ![Points, Line, and Area](screenshots/point_line_area.png "Points, Line, and Area")
-
-- _Plot_ button:
-
-  Clicking this button will open the appropriate plotting window (see [Ocean Navigator Plot Windows](#ocean-navigator-plot-windows)). This button is only response if enough points have been drawn for the selected feature type; 1 for point, 2 for line, and 3 for area plots.
+  ![Points, Line, and Area](images/point_line_area.png "Points, Line, and Area")
 
 - _Clear_ button:
 
@@ -300,67 +295,86 @@ These options include:
 
 - _Undo_ button:
 
-  This button removes the last-drawn point.
+  This button removes the last-drawn feature.
 
 - _Close_ button:
 
   Closes the plot options.
 
-Users can add as many points as they wish by clicking on the map. To modify the location of one or more points users can click open the _Enter Point Coordinates_ window <img src="screenshots/enter_button.png" width=35 height=35 /> to modify point locations. 
+![Drawing Map Features](animations/map_features/add_feature_click.gif "Drawing Map Features")
 
-Once the desired points have been added and feature type selected, click the _Plot_ button to view the selected data. If multiple point features are drawn users can click on a single feature to view the point plot for that location.
+Once features have been drawn user can select a feature to plot by clicking on it. Only one line or area feature can be selected at a time but multiple points can be selected at once. To do so hold the _shift_ key while clicking on the desired point features. Selected features can be deselected by holding shift and clicking on them.
 
-### Related Instructional Videos:
+Selected features can be plotted by double clicking on them or pressing the plot button on the right side of the screen <img src="images/plot_button.png" width=35 height=35 />. All selected point features will be plotted together.
 
-- [Create Point plot and Virtual Mooring](#create-point-plot-and-virtual-mooring)
-- [Create Virtual Mooring for current and bearing data](#create-virtual-mooring-for-current-and-bearing-data)
-- [Create Transect and Hovmöller plot](#create-transect-and-hovmöller-plot)
-- [Create Area plot and save \*.csv](#create-area-plot-and-save-csv)
+![Plotting Map Features](animations/map_features/plot_features.gif "Plotting Map Features")
 
-## Selecting Coordinates and Creating Plots with the _Enter Point Coordinates_ Tool
+Users can add as many points as they wish by clicking on the map. To modify features users can open the _Edit Map Features_ window <img src="images/edit_button.png" width=35 height=35 /> to modify feature coordinates, change a feature's geometry type, or remove a feature from the map. 
 
-Users can add precise features to the map using the _Enter Point Coordinates_ tool. To open the _Enter Coordinates_ window first click on the _Enter Point Coordinates_ button <img src="screenshots/enter_button.png" width=35 height=35 />
+## Adding and Modifying Map Features with the _Edit Map Features_ Tool
 
-![Enter Point Coordinates Window](screenshots/enter_coords_window.png "Enter Point Coordinates Window")
+Users can precisely add new features and edit existing ones using the _Edit Map Features_ tool. <img src="images/edit_button.png" width=35 height=35 />
 
-The left side of the window contains a table for the coordinates entered. If any points have been selected, whether through this window or other means, the table will already be populated.
+![Edit Map Features Window](images/edit_map_features.png "Edit Map Features Window")
 
-To add new coordinates to the table enter latitude and longitude values in the form to the right and click _Add_. The _Clear_ button will remove all points from the table.
+The left side of the window contains a _feature card_ for each one currently drawn on the map. Feature cards contain functionality for modiying coordinates, geometry, and labels. Clicking _Add New Feature_ will add an empty feature card to the feature list. From there users can add points to the feature using the _Add Vertices (+)_ button.
 
-![Add Point Coordinates](screenshots/add_coords.png "Add Point Coordinates")
+![Add Feature with Edit Map Features Window](animations/map_features/add_feature_table.gif "Add Feature with Edit Map Features Window")
 
-Users can also import data from _csv_files by clicking on the \_Uploatd CSV_ button. The file must begin with a header containing "latitude" and "longitude" to indicate which columns hold these values.
+![Adding Feature Vertices with Edit Map Features Window](animations/map_features/add_vertices.gif "Adding Feature Vertices with Edit Map Features Window")
+
+A feature's geometry type can be changed using the drop down menu at the top of the feature card. 
+
+![Change Feature Type with Edit Map Features Window](animations/map_features/change_feature_type.gif "Change Feature Type with Edit Map Features Window")
+
+Users can also add labels to features by adding text to the text box at the top of the feature card.
+
+![Add Feature Label with Edit Map Features Window](animations/map_features/label_features.gif "Add Feature Label with Edit Map Features Window")
+
+Users can select and de select features by clicking on the check box in the top left corner of each feature card. If one or more features is selected the _Plot Selected Features_ button will be enabled.
+
+Users can modify feature coordinates by editing the values in the feature cards. Vertices can be remoted entirely by clicking the _X_ to the right of the coordinate boxes.
+
+Multiple selected point features can be combined into a single feature using the _Combine Selected Point Features_ button. The combined points will create a line feature by default but can be changed to an area using the geometry type dropdown. Likewise, selected line and area features can be split into individual point features by clicking on the _Split Line/Area Feature Into Points_ button.
+
+![Combine Point Features with Edit Map Features Window](animations/map_features/combine_points.gif "Combine Point Features with Edit Map Features Window")
+
+![Split Line/Area Features with Edit Map Features Window](animations/map_features/split_poly.gif "Split Line/Area Features with Edit Map Features Window")
+
+Users can also import data from _csv_files by clicking on the \_Upload CSV_ button. The uploaded type can be selected using the adjacent dropdown menu. The file must begin with a header containing "latitude" and "longitude" to indicate which columns hold these values.
 
 Users can click on values in the table to make further changes, or remove them completely by clicking the _x_ icon on the right of their respective rows.
 
-Once satisfied with the chosen coordinates users can select a plot type from the _Point/Line/Area_ toggle and click the plot button to open the appropriate [Plot Window](#ocean-navigator-plot-windows).
-
-### Related Instructional Videos:
-
-- [Creating plots using Enter Point Coordinates and adding quivers](#creating-plots-using-enter-point-coordinates-and-adding-quivers)
+![Add Feature with Edit Map Features Window](animations/map_features/add_feature_table.gif "Add Feature with Edit Map Features Window")
 
 ## Creating Plots via the _Preset Features_ Menu
 
-The Ocean Navigator also has a number of preset features that may be of interest to users. To view the list of the preset features click on the _Preset Features_ button <img src="screenshots/preset_button.png" width=35 height=35 />
+The Ocean Navigator also has a number of preset features that may be of interest to users. To view the list of the preset features click on the _Preset Features_ button <img src="images/preset_button.png" width=35 height=35 />
 
-![Preset Features Window](screenshots/preset_features_window.png "Preset Features Window")
+![Preset Features Window](images/preset_features_window.png "Preset Features Window")
 
 Features are categorized into lists of Point, Line, or Area features. Click on any item from the list to add it to the global map. Note that any other features will be removed.
 
-![NAFO Divisions](screenshots/NAFO_areas.png "NAFO Divisions")
+![NAFO Divisions](images/NAFO_areas.png "NAFO Divisions")
 
 Once features are added to the map users can plot their point/line/area data by clicking on them.
 
-### Related Instructional Videos:
+## Removing Map Features
 
-- [Creating climatology plots for predefined areas](#creating-climatology-plots-for-predefined-areas)
+Users can remove features from the map using one of the following methods:
+
+   1. Using the Undo button in the _Draw Map Features_ menu to remove the last-added feature.
+   2. Deleting specifc features the Edit Map Features window.
+   3. Clicking Reset Map button to remove all features from the map.
+
+![Removing Map Features](animations/map_features/remove_features.gif "Removing Map Features")
 
 ## Viewing Observation and Class4 Data
 
 The Ocean Navigator has a variety of observation products available to its users. To
-display observation features on the map first click the _Observations_ button <img src="screenshots/obs_button.png" width=35 height=35 />. This will open the _Observation Options_ menu:
+display observation features on the map first click the _Observations_ button <img src="images/obs_button.png" width=35 height=35 />. This will open the _Observation Options_ menu:
 
-![Observation Options](screenshots/obs_tools.png "Observation Options")
+![Observation Options](images/obs_tools.png "Observation Options")
 
 These options are as follows:
 
@@ -386,7 +400,7 @@ These options are as follows:
 
 Once a selection has been made the _Select Observations_ window will open. This window gives users a number of ways to query observation data and view the resulting products.
 
-![Observation Window](screenshots/obs_window.png "Select Observation Window")
+![Observation Window](images/obs_window.png "Select Observation Window")
 
 1. Observation Type
 
@@ -410,7 +424,7 @@ Once a selection has been made the _Select Observations_ window will open. This 
 
 Once the user has completed the steps above the global map will be populated with observation points that meet their selection criteria.
 
-![Observations displayed on map](screenshots/observations.png "Observations displayed on map")
+![Observations displayed on map](images/observations.png "Observations displayed on map")
 
 ### Displaying Class4 Data
 
@@ -420,37 +434,29 @@ Class4 metrics are available in two categories; _Ocean Predict_, and _RIOPS Assi
 
 The _Class4 Selector_ includes a dropdown menu to where users can toggle between to two Class4 product types and a calendar that shows the dates with available data for the selected product.
 
-![Class4 Selector](screenshots/class4_selector.png "Class4 Selector")
+![Class4 Selector](images/class4_selector.png "Class4 Selector")
 
 To add Class4 data to the map select the Class4 product type then a date of interest. The Ocean Navigator will then draw the Class4 points on the map. These points are colored according the products RMS error i.e. how well the model fits the observed data. Green points indicate high agreement between the forecasted data and observation while red points indicated poor agreement.
 
-![Class4 points displayed on map](screenshots/class4_points.png "Class4 points displayed on map")
-
-### Related Instructional Videos:
-
-- [Plot Class4 data](#plot-class4-data)
+![Class4 points displayed on map](images/class4_points.png "Class4 points displayed on map")
 
 ## Comparing Datasets
 
-Checking the compare datasets toggle switch ![Compare Datasets Toggle](screenshots/compare_toggle.png "Compare Datasets Toggle")
+Checking the compare datasets toggle switch ![Compare Datasets Toggle](images/compare_toggle.png "Compare Datasets Toggle")
 will open the comparison view. The view includes two maps and corresponding Dataset Selector panels. Users can select from any two available datasets and make comparisons between them. Any map interactions, such as panning or zooming, is applied to both maps. Feature selection will also apply to both maps and comparison plots will be made where possible. Examples of the comparison view and resulting transect and area plots are given below.
 
 ### Comparing datasets on the Global Map
-![Comparing Datasets](screenshots/compare_map.png "Comparing Datasets")
+![Comparing Datasets](images/compare_map.png "Comparing Datasets")
 
 ### Comparing Transect plots
-![Transect Comparison](screenshots/compare_line.png "Transect Comparison")
+![Transect Comparison](images/compare_line.png "Transect Comparison")
 
 ### Comparing Area plots
-![Area Comparison](screenshots/compare_area.png "Area Comparison")
+![Area Comparison](images/compare_area.png "Area Comparison")
 
-### Related Instructional Videos:
+## Changing Map Settings <img src="images/settings_button.png" width=35 height=35 />
 
-- [Compare datasets and save plot](#compare-datasets-and-save-plot)
-
-## Changing Map Settings <img src="screenshots/settings_button.png" width=35 height=35 />
-
-![Settings Window](screenshots/settings_window.png "Settings Window")
+![Settings Window](images/settings_window.png "Settings Window")
 
 Users can change many of the Global Map parameters to suit there needs. The available options are described below:
 
@@ -506,7 +512,15 @@ Users can change many of the Global Map parameters to suit there needs. The avai
 
      Click this button to apply bathymetry changes to the map.
 
+## Adding Map Annotations
+
+Users can now add labels to the map to indicate areas of interest or groups of features. The Add Annotation window allows users to add a new label, undo the most recently added, or clear all labels from the map. Labels can be moved by clicking on a dragging them.
+
+![Adding Map Annotations](animations/map_annotations.gif "Adding Map Annotations")
+
 # Instructional Videos
+
+Please note that the following resources were created with a previous version of the Navigator and may not accurately depict current usage.
 
 ## Create Point plot and Virtual Mooring
 

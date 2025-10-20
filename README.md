@@ -127,6 +127,23 @@ Clicking this button opens the _Info/Help_ window where users can find dataset m
 
 Users can produce a number of plot types from points of interest within the Ocean Navigator. Each plot includes basic statistics for the data presented.
 
+## Managing Plot Windows (Minimise / Restore / Close)
+Plot windows can now be minimized to a dedicated **Minimized Plot Bar**, allowing users to draw, view, and manage multiple plots efficiently.
+### Minimise
+![Minimized Window](images/minimize_window.png "Minimized Window")
+- Each plot window has a **Minimise** button (—) in the window header.
+- Clicking Minimize collapses the window and adds it to the Minimized Plot Bar located at the top-left of the map.
+- The minimized item displays the title that includes the plot type (e.g., Point, Line, Area) and its corresponding coordinates.
+### Restore / Maximise
+![Restore Window](images/restore_window.png "Restore Window")
+- Clicking a plot in the Minimized Plot Bar restores the corresponding window. 
+- Alternatively, selecting the same plot on the map and clicking Plot, or double-clicking the selected feature, will also reopen the minimized window.
+
+### Close / Remove
+![close Window](images/close_window.png "close Window")
+- The X on the plot window header removes that plot window entirely.
+- The X on a minimised plot bar removes the minimised entry as well.
+
 ## Point
 
 ![Point Window](images/point_window.png "Point Window")

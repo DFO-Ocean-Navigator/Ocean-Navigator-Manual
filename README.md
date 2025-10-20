@@ -127,6 +127,23 @@ Clicking this button opens the _Info/Help_ window where users can find dataset m
 
 Users can produce a number of plot types from points of interest within the Ocean Navigator. Each plot includes basic statistics for the data presented.
 
+## Managing Plot Windows (Minimise / Restore / Close)
+Plot windows can now be minimized to a dedicated **Minimized Plot Bar**, allowing users to draw, view, and manage multiple plots efficiently.
+### Minimise
+![Minimized Window](images/minimize_window.png "Minimized Window")
+- Each plot window has a **Minimise** button (—) in the window header.
+- Clicking Minimize collapses the window and adds it to the Minimized Plot Bar located at the top-left of the map.
+- The minimized item displays the title that includes the plot type (e.g., Point, Line, Area) and its corresponding coordinates.
+### Restore / Maximise
+![Restore Window](images/restore_window.png "Restore Window")
+- Clicking a plot in the Minimized Plot Bar restores the corresponding window. 
+- Alternatively, selecting the same plot on the map and clicking Plot, or double-clicking the selected feature, will also reopen the minimized window.
+
+### Close / Remove
+![close Window](images/close_window.png "close Window")
+- The X on the plot window header removes that plot window entirely.
+- The X on a minimised plot bar removes the minimised entry as well.
+
 ## Point
 
 ![Point Window](images/point_window.png "Point Window")
@@ -515,6 +532,66 @@ Users can change many of the Global Map parameters to suit there needs. The avai
 Users can now add labels to the map to indicate areas of interest or groups of features. The Add Annotation window allows users to add a new label, undo the most recently added, or clear all labels from the map. Labels can be moved by clicking on a dragging them.
 
 ![Adding Map Annotations](animations/map_annotations.gif "Adding Map Annotations")
+
+## Dataset Search and Filtering
+![Search Button Location](images/search_btn_location.png "Search Button Location")
+The **Dataset Search** feature helps users quickly locate specific datasets from large collections using an interactive filter panel. It is accessed via the **Search** button located on the dataset selector panel at the bottom right of the interface.
+![Default Search Panel](images/default_search_panel.png "Default Search Panel")
+### Opening the Search Panel
+Clicking the **Search** button opens a filter panel containing five filters that can be used individually or in combination to narrow down datasets.
+
+Initially, **all available datasets** are displayed and the **Active Filters** section at the top shows *“No filters selected”*.
+
+---
+![Variable Filter](images/variable_filter.png "Variable Filter")
+### 1. Variable Filter
+- Displays a list of all **variables** found across the available datasets.
+- Selecting a variable filters the list to show only datasets containing that variable.
+- Choosing “any” or clearing the filter restores the full dataset list.
+![Quiver Filter](images/quiver_filter.png "Quiver Filter")
+### 2. Quiver Filter
+- Displays only datasets containing **quiver (vector) variables** .
+- Selecting a specific quiver variable limits the dataset list to those that contain it.
+- Selecting “None” will include both vector and non-vector datasets.
+![Depth Filter](images/depth_filter.png "Depth Filter")
+### 3. Depth Dimension Filter
+- Filters datasets by whether they include a **depth dimension** (3D) or not (2D).
+- Options include:
+  - **Yes (variables with depth dimensions)** — datasets without depth.
+  - **surface variables only** — datasets with a depth coordinate.
+  - **Both 2D and 3D** — shows all datasets.
+- Useful for quickly distinguishing between surface and subsurface data.
+![Date Filter](images/date_filter.png "Date Filter")
+### 4. Date Filter
+- Allows filtering datasets by **available data dates**.
+- Select a specific date, and only datasets that contain data for that date will be displayed.
+![Location Filter](images/date_filter.png "Location Filter")
+### 5. Location Filter
+- Enables filtering by **geographic location**.
+- Two input boxes are provided:
+  - **Latitude** (first box)
+  - **Longitude** (second box)
+- After entering coordinates, click **Search Location** to view datasets that contain data for that location.
+- Particularly useful for regional analyses or when focusing on a specific study area.
+
+---
+![Location Filter](images/active_filter.png "Location Filter")
+### Active Filters
+- The top of the panel displays all currently applied filters under **Active Filters**.
+- Each filter can be removed individually using the small **×** icon.
+- Use the **Clear All** button to remove all filters at once and reset the dataset list.
+
+---
+
+### Applying a Dataset
+Once the desired dataset is located, click the **Apply** button beside its name to load it into the **main map interface**. 
+
+---
+
+### Notes
+- Filters can be combined in any order; each new filter further narrows the dataset list.
+- The system is designed to respond dynamically — no page reloads or manual refreshes required.
+- When no datasets match the selected filters, a message will indicate that no results were found
 
 # Instructional Videos
 
